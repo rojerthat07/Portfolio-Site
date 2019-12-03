@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "1-helpers/_1-helpers.scss",
+        "1-helpers/_functions.scss",
+        "1-helpers/_mixins.scss",
+        "1-helpers/_variables.scss",
+        "0-plugins/_0-plugins.scss",
+        "2-base/_2-base.scss",
+        "2-base/_global.scss",
+        "2-base/_normalize.scss",
+        "2-base/_typography.scss",
+        "3-layout/_3-layout.scss",
+        "3-layout/_footer.scss",
+        "3-layout/_navigation.scss",
+        "4-modules/_4-modules.scss",
+        "5-templates/_5-templates.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
