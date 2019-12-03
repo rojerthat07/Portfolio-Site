@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +11,42 @@
     <script src="/src/frameworks/jquery/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-   
-  
-  <!--Main Style Sheet-->
-  <link rel="stylesheet" href="/src/styles/main.css">
+
+
+    <!--Main Style Sheet-->
+    <link rel="stylesheet" href="/src/styles/main.css">
 </head>
+
 <body>
-      
-      <nav class="navbar navbar-expand-md navbar-dark">
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="index.html" class="navbar-brand">jercarlo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Projects Section-->
+    <div class="project-container">
+            <h1>Online Admission</h1>
+            <iframe src="/projects/DHVSU Online Admission/build/index.html" frameborder="0"></iframe>
+         
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ea?</p>
+    </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse"  id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
-                    </li>
-                </ul>
-            </div>
-
-
-
-      </nav>
-
-
-    
 </body>
+
 </html>
