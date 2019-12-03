@@ -1,0 +1,11 @@
+$fontVariant:(
+    "font1":'Roboto Thin',
+    "font2":'Roboto Light',
+    "font3":'Roboto',
+    "font4":'Roboto Medium',
+    "font5":'Roboto Black',
+);
+
+@function font($fontName){
+    @return map-get($fontVariant,$fontName);
+}
