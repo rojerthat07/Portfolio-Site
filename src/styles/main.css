@@ -9,4 +9,28 @@ body {
 .navbar .navbar-nav .nav-item {
   padding-right: 1em;
 }
+
+.projects-container {
+  width: 90%;
+  margin: auto;
+}
+
+.projects-container .project {
+  width: 25%;
+  height: auto;
+  text-align: center;
+}
+
+.projects-container .project .project__heading {
+  font-size: 1em;
+}
+
+.projects-container .project .project__image {
+  width: 100%;
+  height: auto;
+}
+
+.projects-container .project .project__information {
+  font-size: .5em;
+}
 /*# sourceMappingURL=main.css.map */

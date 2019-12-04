@@ -1,0 +1,72 @@
+.projects-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: .8em;
+    width:98%;
+    margin:2% auto 2% auto;
+    .project{
+ 
+        width:100%;
+        height:100%;
+        text-align: center;
+        padding: .5em 0;
+        border:1px solid rgb(77, 77, 77);
+        border-radius: .3em;
+        transition: .2s;
+        &:hover{
+            color:white;
+            background-color: $color3;
+        }
+       
+
+        .project__project{
+            position: relative;
+            cursor: pointer;
+           
+            &:hover .project__project--view{
+                display: flex;
+            }
+           
+            .project__project--image{
+                width:100%;
+                height:auto;
+            }
+
+            .project__project--view{
+                position: absolute;
+                top:0;
+                z-index: 1;
+                background-color:rgba(0, 0, 0, 0.5);
+                width:100%;
+                height:100%;
+                display:none;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size:1.5em;
+                    color:rgb(206, 204, 204);
+                    padding:.5em 1em;
+                    cursor: pointer;
+                    &:hover{
+                        color:rgb(255, 255, 255);
+                    }
+                }
+            }
+
+        }
+
+        .project__heading{
+            font-size: .8em;
+            padding: .8em;
+            font-family: font("font4");
+            
+        }
+       
+        .project__information{
+            font-size: .7em;
+            padding: .8em;
+            margin:5%; font-family: font("font2");
+        }
+    }
+}

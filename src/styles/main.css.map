@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AOAA,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,cAAc;CAC9B;;AKFD,AAAA,OAAO,CAAA;EACH,gBAAgB,EAAC,OAAe;CAYnC;;AAbD,AAMQ,OAND,CAGH,WAAW,CAGP,SAAS,CAAA;EACN,aAAa,EAAC,GAAG;CAInB",
+    "mappings": "AOAA,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,cAAc;CAC9B;;AKFD,AAAA,OAAO,CAAA;EACH,gBAAgB,EAAC,OAAe;CAYnC;;AAbD,AAMQ,OAND,CAGH,WAAW,CAGP,SAAS,CAAA;EACN,aAAa,EAAC,GAAG;CAInB;;AEXT,AAAA,mBAAmB,CAAA;EACf,KAAK,EAAC,GAAG;EACT,MAAM,EAAC,IAAI;CAmBd;;AArBD,AAGI,mBAHe,CAGf,QAAQ,CAAA;EACJ,KAAK,EAAC,GAAG;EACT,MAAM,EAAC,IAAI;EACX,UAAU,EAAE,MAAM;CAcrB;;AApBL,AAOQ,mBAPW,CAGf,QAAQ,CAIJ,iBAAiB,CAAA;EACb,SAAS,EAAE,GAAG;CACjB;;AATT,AAWQ,mBAXW,CAGf,QAAQ,CAQJ,eAAe,CAAA;EACX,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;CACd;;AAdT,AAiBQ,mBAjBW,CAGf,QAAQ,CAcJ,qBAAqB,CAAA;EACjB,SAAS,EAAE,IAAI;CAClB",
     "sources": [
         "main.scss",
         "1-helpers/_1-helpers.scss",
@@ -16,6 +16,7 @@
         "3-layout/_footer.scss",
         "3-layout/_navigation.scss",
         "4-modules/_4-modules.scss",
+        "4-modules/_projectsSection.scss",
         "5-templates/_5-templates.scss"
     ],
     "names": [],
