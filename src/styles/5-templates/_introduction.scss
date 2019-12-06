@@ -3,7 +3,7 @@
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(/build/images/pexels-photo-316093.jpeg);
     background-size: cover;
-    color: rgb(255, 255, 255);
+
     display: grid;
 
 
@@ -17,11 +17,13 @@
         .introduction__header {
             font-family: font("font4");
             font-size: 4.5em;
+            color: rgb(58, 235, 241);
         }
 
         .introduction__text {
             line-height: 2em;
             font-family: font("font2");
+            color: white;
         }
     }
 
