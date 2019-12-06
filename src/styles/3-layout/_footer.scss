@@ -1,4 +1,27 @@
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 30vh;
     background-color: $color4;
+
+    .footer__icons {
+        i {
+            margin: .5em;
+            cursor: pointer;
+            color: rgba(255, 166, 0, 0.9);
+            ;
+            font-size: 2em;
+            padding: .7em;
+            background-color: $color5;
+            border-radius: 3em;
+
+            &:hover {
+                color: rgb(58, 58, 58);
+                background-color: $color2;
+                border: $color1;
+
+            }
+        }
+    }
 }
