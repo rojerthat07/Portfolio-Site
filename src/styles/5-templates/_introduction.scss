@@ -25,6 +25,20 @@
             font-family: font("font2");
             color: white;
         }
+
+        .introduction__button {
+            font-family: font("font5");
+            padding: .5em 1em;
+            letter-spacing: .1em;
+            background-color: rgba(58, 235, 241, 0.5);
+            border: 1px solid black;
+
+            &:hover {
+                background-color: rgba(58, 235, 241, 0.8);
+                color: white;
+            }
+
+        }
     }
 
 }

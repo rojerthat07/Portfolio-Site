@@ -2,6 +2,7 @@
     background-color: $color5;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid rgba(0, 225, 255, 0.5);
 
     .navbar-brand {
         color: rgba(255, 166, 0, 0.9);
@@ -13,11 +14,11 @@
             width: 45px;
             height: auto;
 
-            &:hover {}
+
         }
 
         span {
-            font-size: .7em;
+            font-size: 1em;
             margin-left: -5px;
         }
 
@@ -27,10 +28,10 @@
         margin-right: 10%;
 
         .nav-item {
-            padding-right: .7em;
+            padding-right: 2em;
             font-family: font("font3");
             text-transform: uppercase;
-            font-size: 1em;
+            font-size: .9em;
 
             .nav_link {}
         }
