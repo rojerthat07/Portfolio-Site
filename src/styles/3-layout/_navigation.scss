@@ -1,20 +1,36 @@
 .navbar {
     background-color: $color5;
+    position: sticky;
+    top: 0;
 
     .navbar-brand {
         color: rgba(255, 166, 0, 0.9);
         font-family: 'OldMan';
         font-size: 1.7em;
+        margin-left: 10%;
+
+        img {
+            width: 45px;
+            height: auto;
+
+            &:hover {}
+        }
+
+        span {
+            font-size: .7em;
+            margin-left: -5px;
+        }
+
     }
 
     .navbar-nav {
-
+        margin-right: 10%;
 
         .nav-item {
-            padding-right: 1em;
+            padding-right: .7em;
             font-family: font("font3");
             text-transform: uppercase;
-            font-size: .9em;
+            font-size: 1em;
 
             .nav_link {}
         }
