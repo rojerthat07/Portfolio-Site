@@ -1,0 +1,28 @@
+.introduction {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/build/images/architecture_city.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: grid;
+
+
+
+    .introduction__information {
+        width: 40%;
+        margin: 10% auto 0 10%;
+
+
+
+        .introduction__header {
+            font-family: font("font4");
+            font-size: 4.5em;
+        }
+
+        .introduction__text {
+            line-height: 2em;
+            font-family: font("font2");
+        }
+    }
+
+}
