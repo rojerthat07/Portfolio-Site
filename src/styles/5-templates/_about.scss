@@ -1,19 +1,60 @@
 .about {
-    width: 70%;
+    width: 60%;
     margin: 5% auto;
+
+
 
     .about__heading {
         font-size: 4em;
         text-align: center;
-        border-bottom: 1px solid black;
-        padding: .5em;
+        border-bottom: 1px solid rgb(168, 168, 168);
+        padding: .3em;
+        margin: .4em;
     }
 
     .about__paragraph {
-        font-family: font("font1");
+        font-family: font("font2");
         font-size: 1.3em;
         text-align: center;
         line-height: 2em;
+    }
+
+    .about__three-column {
+        width: 70%;
+        margin: 3em auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .column {
+
+            .column__paragraph {
+
+                font-size: 1.9em;
+                font-family: font("font1");
+                text-shadow: 1px 1px 5px gray;
+
+                .paragraph__heading {
+                    font-family: font("font5");
+                    font-size: .7em;
+                    text-shadow: none;
+                }
+
+                img {
+                    width: 25px;
+                    height: auto;
+
+                }
+            }
+
+            .column__image {
+                width: 100%;
+                margin: auto;
+                height: auto;
+
+                border-radius: 2px;
+
+            }
+        }
     }
 
 

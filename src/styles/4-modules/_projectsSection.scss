@@ -1,10 +1,23 @@
+.projects-container__heading {
+    font-size: 3em;
+
+
+    padding: .3em;
+
+    width: 95%;
+    margin: 1em auto;
+}
+
+
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
-    grid-gap: .8em;
-    width: 98%;
+    grid-gap: 4em;
+    width: 90%;
     margin: 2% auto 2% auto;
+
+
 
     .project {
         width: 100%;
@@ -16,8 +29,7 @@
         transition: .2s;
 
         &:hover {
-            color: $color5;
-            background-color: $color2;
+            transform: scale(1.1, 1.1);
         }
 
 
