@@ -2,5 +2,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    .column {}
+    .column {
+        .column__image {
+            width: 50%;
+            margin: auto;
+            height: auto;
+
+        }
+    }
 }
