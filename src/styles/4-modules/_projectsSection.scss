@@ -6,7 +6,6 @@
 }
 
 .projects-container {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
@@ -95,7 +94,7 @@
 .project__overview{
     text-align: center;
     width:90%;
-    height:85vh;
+    height:80vh;
     z-index: 1;
     margin:3em auto;
     border-radius: 15px 0px 0px 15px ;
@@ -111,31 +110,38 @@
         position: absolute;
         top:0;
         right:0;
-        padding:1em;
+        padding:2em;
         background-color: inherit;
         color:black;
         border: none;
     }
-
-    .project__overview--heading{
-        font-size: 4em;
-        padding:.7em;
-        margin:0em 1em 1em 1em;
-        border-bottom: 1px solid black;
+    .project__overview--introduction{
+        height:75vh;
+        .project__overview--heading{
+           
+            font-size: 4em;
+            padding:.7em;
+            
+        }
+        .project__overview--logo{
+            display:inline;
+            width:150px;
+            height:auto;
+            margin:5em 0 0 0;
+            
+        }
+        .project__overview--details{
+            line-height: 2em;
+        }
     }
-    .project__overview--logo{
-        display:inline;
-        width:150px;
-        height:auto;
-        
-        
-    }
+   
     .project__information{
-        .project__information--heading{
 
+        .project__information--heading{
+            margin:1em 0;
         }
         .project__information--details{
-
+            line-height: 2em;
         }
     }
 

@@ -1,12 +1,14 @@
 .two__column {
-    width: 70%;
+    width: 100%;
     margin: 3em auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 5em;
+    
+
 }
-
-
-
 
 .three__column {
     width: 70%;
