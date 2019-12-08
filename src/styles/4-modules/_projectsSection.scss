@@ -95,21 +95,24 @@
 .project__overview{
     text-align: center;
     width:90%;
-    z-index: 3;
+    height:85vh;
+    z-index: 1;
     margin:3em auto;
-    position: absolute;
-    top:0;
+    border-radius: 15px 0px 0px 15px ;
+    position: sticky;   
+    overflow:auto;
+    top:10%;
     left:5%;
     display:none;
-    background-color: rgb(104, 100, 100);
-    padding:3em;
+    background-color: rgba(238, 238, 238, 1);
+    padding:5em 15em;
 
     .project__overview--exit{
         position: absolute;
         top:0;
         right:0;
         padding:1em;
-        background-color: white;
+        background-color: inherit;
         color:black;
         border: none;
     }
