@@ -1,10 +1,4 @@
-.projects-container__heading {
-    font-size: 3em;
-    padding: .3em;
-    width: 95%;
-    margin: 1em auto;
-}
-
+//Projects Container
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -117,6 +111,7 @@
     }
     .project__overview--introduction{
         height:75vh;
+        opacity: 0;
         .project__overview--heading{
            
             font-size: 4em;
@@ -136,7 +131,7 @@
     }
    
     .project__information{
-
+     
         .project__information--heading{
             margin:1em 0;
         }

@@ -1,3 +1,12 @@
+.sections__heading {
+    font-size: 3em;
+    padding: .3em;
+    width: 95%;
+    margin: 1em auto;
+    color:rgb(100, 100, 100);
+}
+
+//Columns
 .two__column {
     width: 100%;
     margin: 3em auto;
@@ -6,8 +15,6 @@
     justify-content: center;
     align-content: center;
     grid-column-gap: 5em;
-    
-
 }
 
 .three__column {
@@ -28,7 +35,6 @@
             img {
                 width: 25px;
                 height: auto;
-
             }
         }
         .column__image {

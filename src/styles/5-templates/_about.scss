@@ -3,7 +3,7 @@
     margin: 5% auto;
 
     .about__heading {
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
         border-bottom: 1px solid rgb(168, 168, 168);
         padding: .3em;
@@ -11,8 +11,9 @@
     }
 
     .about__paragraph {
+        margin:0 2em;
         font-family: font("font2");
-        font-size: 1.3em;
+        font-size: 1em;
         text-align: center;
         line-height: 2em;
     }
