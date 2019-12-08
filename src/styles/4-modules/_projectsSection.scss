@@ -1,13 +1,9 @@
 .projects-container__heading {
     font-size: 3em;
-
-
     padding: .3em;
-
     width: 95%;
     margin: 1em auto;
 }
-
 
 .projects-container {
     display: grid;
@@ -16,8 +12,6 @@
     grid-gap: 4em;
     width: 90%;
     margin: 2% auto 2% auto;
-
-
 
     .project {
         width: 100%;
@@ -60,7 +54,7 @@
                 i {
                     font-size: 1.5em;
                     color: rgb(206, 204, 204);
-                    padding: .5em 1em;
+                    padding: .5em .8em;
                     cursor: pointer;
 
                     &:hover {
@@ -91,5 +85,33 @@
             font-family: font("font4");
 
         }
+    }
+}
+
+
+.project__overview{
+    text-align: center;
+    width:90%;
+    margin:3em auto;
+    .project__overview--heading{
+        font-size: 4em;
+        padding:.7em;
+        margin:1em;
+        border-bottom: 1px solid black;
+    }
+    .project__information{
+        .project__heading{
+
+        }
+        .project__details{
+
+        }
+    }
+
+    img{
+        width:100%;
+        margin:1em;
+        padding:1em;
+        height:auto;
     }
 }
