@@ -1,4 +1,3 @@
-
 //PROJECT OVERVIEW SHOW AND HIDE
 function show(id) {
     document.getElementById(id).style.display = "block";
@@ -6,8 +5,6 @@ function show(id) {
 function hide(id) {
     document.getElementById(id).style.display = "none";
 }
-
-
 //Scroll Magic and TweenMax
 const controller = new ScrollMagic.Controller();
 //DHVSU OVERVIEW
@@ -66,7 +63,7 @@ gamingPctl2.from("#project-overview-gaming-pc-images", 2, {
     y: -100
 });
 //Trigger Scenes
-const gamingPc1 = new ScrollMagic.Scene({
+const gamingPcScene1 = new ScrollMagic.Scene({
     triggerElement: "#project-overview-gaming-pc-trigger"
 })
     .setTween(gamingPctl)
@@ -76,10 +73,27 @@ const gamingPcScene2 = new ScrollMagic.Scene({
 })
     .setTween(gamingPctl2)
     .addTo(controller)
+//BMI CALCULATOR OVERVIEW
+const bmiCalculatortl = new TimelineMax();
+const bmiCalculatortl2 = new TimelineMax();
+//Effects
+bmiCalculatortl.from("#project-overview-bmi-calculator", .5, {
+    opacity: 1
+});
+bmiCalculatortl2.from("#project-overview-bmi-calculator-images", 2, {
+    opacity: 0,
+    y: -100
+});
+//Trigger Scenes
+const bmiCalculatorScene1 = new ScrollMagic.Scene({
+    triggerElement: "#project-overview-bmi-calculator-trigger"
+})
+    .setTween(bmiCalculatortl)
+    .addTo(controller)
+const bmiCalculatorScene2 = new ScrollMagic.Scene({
+    triggerElement: "#project-overview-bmi-calculator-images-trigger"
+})
+    .setTween(bmiCalculatortl2)
+    .addTo(controller)
 
 
-
-
-function updatePercentage() {
-    tl.progress();
-}
