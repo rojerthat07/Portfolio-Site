@@ -28,7 +28,7 @@
             font-size: 1.9em;
             font-family: font("font1");
             text-shadow: 1px 1px 5px gray;
-            .paragraph__heading {
+            .column__paragraph--heading {
                 font-family: font("font5");
                 font-size: .7em;
                 text-shadow: none;
@@ -46,3 +46,22 @@
         }
     }
 }
+
+//Columns Designs
+    .column__information{
+        width:80%;
+        margin: auto;
+      .column__information--heading{
+
+      }
+      .column__information--details{
+          line-height: 2em;
+      }
+    }
+    .column__images{
+      .column__images--image{
+        width:80%;
+        display: block;
+        margin: auto;
+      }
+    }
