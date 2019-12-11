@@ -1,0 +1,52 @@
+.introduction {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(/build/images/pexels-photo-316093.jpeg);
+    background-size: cover;
+    display: grid;
+
+
+
+    .introduction__information {
+        width: 40%;
+        margin: 10% auto 0 10%;
+
+        .introduction__header {
+            font-family: font("font4");
+            font-size: 2em;
+            color: rgb(253, 255, 255);
+            padding: 0;
+        }
+
+        .introduction__header-2 {
+            font-family: font("font4");
+            font-size: 3em;
+            color: rgb(58, 235, 241);
+            border-bottom: 1px solid white;
+            padding: 0em 0 .5em 0;
+        }
+
+        .introduction__text {
+            line-height: 2em;
+            font-family: font("font2");
+            color: white;
+            font-size: .9em;
+        }
+
+        .introduction__button {
+            font-family: font("font5");
+            padding: .5em 1em;
+            letter-spacing: .1em;
+            background-color: rgba(58, 235, 241, 0.5);
+            border: 1px solid black;
+            font-size: .8em;
+
+            &:hover {
+                background-color: rgba(58, 235, 241, 0.8);
+                color: white;
+            }
+
+        }
+    }
+
+}

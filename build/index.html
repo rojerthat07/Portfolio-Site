@@ -2,114 +2,555 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jer Carlo Portfolio</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <script src="/src/frameworks/jquery/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/src/frameworks/fontawesome-free-5.11.2-web/css/all.min.css">
-
-
-    <!--Main Style Sheet-->
-    <link rel="stylesheet" href="/build/styles/main.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jer Carlo Portfolio</title>
+  <link rel="icon" href="/build/images/site logo.png">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <script src="/src/frameworks/jquery/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <!--ScrollMagic and Gsap Javascripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+    integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="/src/frameworks/fontawesome-free-5.11.2-web/css/all.min.css">
+  <!--Main Style Sheet-->
+  <link rel="stylesheet" href="/build/styles/main.min.css">
 </head>
 
 <body>
-    <!--Navigation-->
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <a href="index.html" class="navbar-brand">Jer Carlo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-            </ul>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a href="index.html" class="navbar-brand"> <span>Jer Carlo
+        Catallo</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/resume.html" class="nav-link">Resume</a>
+        </li>
+      </ul>
+    </div>
+    <!--Navigation End tag-->
+  </nav>
+  <!--Project Overview List-->
+  <!--Project 1 Overview-->
+  <div class="project__overview" id="dhvsuProject">
+    <button class="project__overview--exit" onclick="hide('dhvsuProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-dhvsu">
+      <img src="/build/images/project-logo/dhvsu-logo.png" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">UNIVERSITY ONLINE ADMISSION</h1>
+      <p class="project__overview--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
+    <hr id="project-overview-dhvsu-trigger">
+    <div class="project__information">
+      <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+      <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">CHALLENGES</h1>
+          <p class="project__information--details" id="project-overview-dhvsu-image-trigger"> Lorem ipsum dolor sit,
+            amet
+            consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
         </div>
-    </nav>
-    <!--Projects Section-->
-    <div class="projects-container">
-        <!--Project 1-->
-        <div class="project">
-                <h1 class="project__heading">University Online Admission</h1>
-                <div class="project__project">
-                    <img class="project__project--image" src="/build/images/online admission site.png" alt="">
-                  <div class="project__project--view">
-                    <i class="fas fa-code"></i>
-                    <i class="fas fa-eye"></i>
-                  </div>
-                </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading"> SOLUTION</h1>
+          <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
+        </div>
+      </div>
+    </div>
+    <div class="three__column" id="project-overview-dhvsu-images">
+      <img src="/build/images/online admission site.png" alt="">
+      <img src="/build/images/universe site.png" alt="">
+      <img src="/build/images/corsair one site.png" alt="">
+    </div>
+  </div>
+  <!--Project 2 Overview-->
+  <div class="project__overview" id="universeProject">
+    <button class="project__overview--exit" onclick="hide('universeProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-universe">
+      <img src="/build/images/project-logo/universe-site-logo.jpg" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">UNIVERSE INFOGRAPHICS</h1>
+      <p class="project__overview--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
+    <hr id="project-overview-universe-trigger">
+    <div class="project__information">
+      <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+      <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">CHALLENGES</h1>
+          <p class="project__information--details" id="project-overview-universe-image-trigger"> Lorem ipsum dolor sit,
+            amet
+            consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading"> SOLUTION</h1>
+          <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
+        </div>
+      </div>
+    </div>
+    <div class="three__column" id="project-overview-universe-images">
+      <img src="/build/images/online admission site.png" alt="">
+      <img src="/build/images/universe site.png" alt="">
+      <img src="/build/images/corsair one site.png" alt="">
+    </div>
+  </div>
+  <!--Project 3 Overview-->
+  <div class="project__overview" id="gamingPcProject">
+    <button class="project__overview--exit" onclick="hide('gamingPcProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-gaming-pc">
+      <img src="/build/images/project-logo/gaming-pc-logo.png" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">GAMING PC MARKETING</h1>
+      <p class="project__overview--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
 
-                <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
+    <hr id="project-overview-gaming-pc-trigger">
+    <div class="project__information">
+      <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+      <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">CHALLENGES</h1>
+          <p class="project__information--details" id="project-overview-gaming-pc-images-trigger"> Lorem ipsum dolor
+            sit, amet
+            consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
         </div>
-          <!--Project 2-->
-        <div class="project">
-            <h1 class="project__heading">Universe Inforgraphics</h1>
-            <div class="project__project">
-                <img class="project__project--image" src="/build/images/universe site.png" alt="">
-              <div class="project__project--view">
-                <i class="fas fa-code"></i>
-                <i class="fas fa-eye"></i>
-              </div>
-            </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading"> SOLUTION</h1>
+          <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
+        </div>
+      </div>
+    </div>
+    <div class="three__column" id="project-overview-gaming-pc-images">
+      <img src="/build/images/online admission site.png" alt="">
+      <img src="/build/images/universe site.png" alt="">
+      <img src="/build/images/corsair one site.png" alt="">
+    </div>
+  </div>
+  <!--Project 4 Overview-->
+  <div class="project__overview" id="bmiCalculatorProject">
+    <button class="project__overview--exit" onclick="hide('bmiCalculatorProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-bmi-calculator">
+      <img src="/build/images/project-logo/dhvsu-logo.png" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">Body Mass Index Calculator</h1>
+      <p class="project__overview--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
+    <hr id="project-overview-bmi-calculator-trigger">
+    <div class="project__information">
+      <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+      <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+        corporis
+        explicabo
+        fugit non recusandae
+        maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+        laudantium
+        quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+        obcaecati
+        porro alias dolore, harum soluta eligendi? </p>
+    </div>
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">CHALLENGES</h1>
+          <p class="project__information--details" id="project-overview-bmi-calculator-images-trigger"> Lorem ipsum
+            dolor
+            sit, amet
+            consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading"> SOLUTION</h1>
+          <p class="project__information--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Veritatis,
+            corporis
+            explicabo
+            fugit non recusandae
+            maiores repellat. A vero dignissimos delectus harum exercitationem provident. Rem nulla expedita libero
+            laudantium
+            quis natus est fuga minus, ut voluptates, neque aperiam. Rerum necessitatibus at veritatis nam labore
+            obcaecati
+            porro alias dolore, harum soluta eligendi? </p>
+        </div>
+      </div>
+    </div>
+    <div class="three__column" id="project-overview-bmi-calculator-images">
+      <img src="/build/images/online admission site.png" alt="">
+      <img src="/build/images/universe site.png" alt="">
+      <img src="/build/images/corsair one site.png" alt="">
+    </div>
+  </div>
+  <!--Introduction-->
+  <div class="introduction">
+    <div class="introduction__information">
+      <h1 class="introduction__header">Hi! I am Jer Carlo D. Catallo </h1>
+      <h1 class="introduction__header-2">I'm a Front-End Web Developer based on the
+        Philippines</h1>
+      <p class="introduction__text">Creative Front-end Developer with a background in Design.
+        I enjoy tackling projects from conception to completion but thrive
+        mostly at the intersection of Design (UX/UI) and Development.</p>
+      <button class="introduction__button">Learn More</button>
+    </div>
+    <!--Introduction End tag-->
+  </div>
+  <p id="about"></p>
+  <!--About Me-->
+  <div class="about">
+    <h1 class="about__heading">About Me</h1>
+    <p class="about__paragraph">I spend my days crafting websites and creating 3d models. I work for all size of
+      companies from small local businesses right up to huge international brands like Vogue. I’ve just spent 4 years
+      living in Thailand. I speak, read and write very basic Thai. I moved back to the UK inSeptember 2015 and am now
+      settled in Seaford, East Sussex.
+      I spend my days crafting websites and creating 3d models. I work for all size of
+      companies from small local businesses right up to huge international brands like Vogue. I’ve just spent 4 years
+      living in Thailand. I speak, read and write very basic Thai. I moved back to the UK inSeptember 2015 and am now
+      settled in Seaford, East Sussex.
+      <br><br>
+      I’m constantly learning web technologies and other design related topics, currently playing around with Javascript
+      and JQuery. I’m a skilled in many areas of design and development. Some of my skills include: I’m constantly
+      learning web technologies and other design related topics, currently playing around with Javascript
+      and JQuery. I’m a skilled in many areas of design and development. Some of my skills include</p>
+    <div class="three__column">
+      <div class="column">
+        <p class="column__paragraph">
+          <br><span class="column__paragraph--heading">Front End Development:</span>
+          <br>HTML5 <img src="/build/images/icons/html-logo.png" alt="">
+          <br>CSS3 <img src="/build/images/icons/css-logo.png" alt="">
+          <br>SASS <img src="/build/images/icons/sass-logo.png" alt="">
+          <br>JavaScript <img src="/build/images/icons/javascript.svg" alt="">
+          <br>Bootstrap <img src="/build/images/icons/bootstrap-logo.png" alt="">
+          <br>
+      </div>
+      <div class="column">
+        <p class="column__paragraph">
+          <br><span class="column__paragraph--heading">Back End Development:</span>
+          <br>PHP <img src="/build/images/icons/php-logo.png" alt="">
+          <br>MySQL <img src="/build/images/icons/mysql-logo.png" alt="">
+        </p>
+      </div>
+      <div class="column">
+        <img class="column__image" src="/build/images/jer.jpg" alt="">
 
-            <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
-              
-    </div> 
-    <!--Project 3-->
-    <div class="project">
-        <h1 class="project__heading">Gaming PC Business</h1>
-        <div class="project__project">
-            <img class="project__project--image" src="/build/images/corsair one site.png" alt="">
-          <div class="project__project--view">
-            <i class="fas fa-code"></i>
-            <i class="fas fa-eye"></i>
-          </div>
-        </div>
-        <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
-</div>
-<!--Project 4-->
-<div class="project">
-        <h1 class="project__heading">BMI Caculator</h1>
-        <div class="project__project">
-            <img class="project__project--image" src="/build/images/bmi calculator site.png" alt="">
-          <div class="project__project--view">
-            <i class="fas fa-code"></i>
-            <i class="fas fa-eye"></i>
-          </div>
-        </div>
-        <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
-</div>
-<!--Project 5-->
-<div class="project">
-        <h1 class="project__heading">Media Queries Helper</h1>
-        <div class="project__project">
-            <img class="project__project--image" src="/build/images/queries helper.png" alt="">
-          <div class="project__project--view">
-            <i class="fas fa-code"></i>
-            <i class="fas fa-eye"></i>
-          </div>
-        </div>
-        <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
-</div>
+      </div>
+    </div>
 
-      
-           
+    <!--About Me End tag-->
+  </div>
+  <hr>
+  <!--Development Process-->
+  <h1 class="sections__heading">How Do I Work?</h1>
+  <p>Planning, Implementing, Coding</p>
+  <div class="two__column">
+    <div class="column__information">
+      <h1 class="column__information--heading">Design process</h1>
+      <p class="column__information--details">My Design process always starts with a pencil and paper, scribbling ideas
+        and concepts, thinking about the
+        problem and the solution.
+
+        Once I have an idea of what I want to achieve, I’ll then sit down at my computer and start with wire frames and
+        low level mockups. Then add the imagery, typography design and details.
+
+        One of the things I love about my Job, is the great tools I get to work with every day, here are some of the
+        tools I use in my work.
+
+        I use Photoshop and Sketch for my layout and design. I use Modo and ZBrush for my 3d work.</p>
+    </div>
+    <div class="column__images">
+      <img class="column__images--image" src="/build/images/contact-images3.jpg" alt="">
+
+      <p id="projects"></p>
+    </div>
+
+  </div>
+  <div class="two__column">
+    <div class="column__images">
+      <img class="column__images--image" src="/build/images/contact-images.jpg" alt="">
+      <p id="projects"></p>
+    </div>
+    <div class="column__information">
+      <h1 class="column__information--heading">Development process</h1>
+      <p class="column__information--details">My Design process always starts with a pencil and paper, scribbling ideas
+        and concepts, thinking about the
+        problem and the solution.
+
+        Once I have an idea of what I want to achieve, I’ll then sit down at my computer and start with wire frames and
+        low level mockups. Then add the imagery, typography design and details.
+
+        One of the things I love about my Job, is the great tools I get to work with every day, here are some of the
+        tools I use in my work.
+
+        I use Photoshop and Sketch for my layout and design. I use Modo and ZBrush for my 3d work.</p>
     </div>
 
 
+  </div>
+  <!--Development Process End-->
+  <hr>
+  <!--Projects Section-->
+  <h1 class="sections__heading">My Latest Works</h1>
+  <div class="projects-container ">
+    <!--Project 1-->
+    <div class="project">
+      <h1 class="project__heading">University Online Admission</h1>
+      <div class="project__project">
+        <img class="project__project--image" src="/build/images/online admission site.png" alt="">
+        <div class="project__project--view">
+          <i class="fas fa-code"></i>
+          <i class="fas fa-eye"></i>
+          <i class="fas fa-info-circle" onclick="show('dhvsuProject')"></i>
+        </div>
+      </div>
+      <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque
+        rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
+      <p class="project__technologies">Using: HTML5, CSS3/Sass, JavaScript, Bootstrap, PHP and MySQL</p>
+    </div>
+    <!--Project 2-->
+    <div class="project">
+      <h1 class="project__heading">Universe Inforgraphics</h1>
+      <div class="project__project">
+        <img class="project__project--image" src="/build/images/universe site.png" alt="">
+        <div class="project__project--view">
+          <i class="fas fa-code"></i>
+          <i class="fas fa-eye"></i>
+          <i class="fas fa-info-circle" onclick="show('universeProject')"></i>
+        </div>
+      </div>
+      <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque
+        rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
+      <p class="project__technologies">Using: HTML5, CSS3/Sass, JavaScript and Bootstrap</p>
+    </div>
+    <!--Project 3-->
+    <div class="project">
+      <h1 class="project__heading">Gaming PC Marketing</h1>
+      <div class="project__project">
+        <img class="project__project--image" src="/build/images/corsair one site.png" alt="">
+        <div class="project__project--view">
+          <i class="fas fa-code"></i>
+          <i class="fas fa-eye"></i>
+          <i class="fas fa-info-circle" onclick="show('gamingPcProject')"></i>
+        </div>
+      </div>
+      <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque
+        rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
+      <p class="project__technologies">Using: HTML5, CSS3/Sass, JavaScript and Bootstrap</p>
+    </div>
+    <!--Project 4-->
+    <div class="project">
+      <h1 class="project__heading">Body Mass Index Caculator</h1>
+      <div class="project__project">
+        <img class="project__project--image" src="/build/images/bmi calculator site.png" alt="">
+        <div class="project__project--view">
+          <i class="fas fa-code"></i>
+          <i class="fas fa-eye"></i>
+          <i class="fas fa-info-circle" onclick="show('bmiCalculatorProject')"></i>
+        </div>
+      </div>
+      <p class="project__information"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ratione atque
+        rem corrupti laborum tempora ducimus neque, assumenda cum aut. </p>
+      <p class="project__technologies">Using: HTML5, CSS3 and JavaScript</p>
+    </div>
+    <!--Projects Section End tag-->
+  </div>
+  <!--Contact Me-->
+  <div class="contact" id="contact">
+    <h1 class="sections__heading" style="color:rgb(228, 228, 228);">CONTACT ME</h1>
+    <div class="two__column">
+      <form action="" class="contact__form">
+        <label>Client's Name: </label><input type="text" name="" id="">
+        <label>Client's Email: </label><input type="text" name="" id="">
+        <label>Project's Detail: </label> <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send Email">
+      </form>
+      <div>
+
+
+
+        <p class="contact__details">I'm Currently available for work. If you have a project you'd like to discuss, then
+          please email me via theform below or you can email at jercarlopogi07@gmail.com</p>
+
+
+
+        <p class="quotation">"Success seems to be connected with action. Successful people keep moving. They make
+          mistakes, but they
+          don't quit."
+          <span class="quotation__author">-Conrad Hilton</span></p>
+        <div class="contact__icons">
+          <i class="fab fa-github-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+
+    </div>
+    <!--Contact Me End tag-->
+  </div>
+  <!--Footer-->
+  <div class="footer">
+    <p>© Copyright jercarlocatallo.com 2019</p>
+  </div>
+
+  <script src="/src/scripts/app.js"></script>
 </body>
 
 </html>

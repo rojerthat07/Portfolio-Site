@@ -1,21 +1,40 @@
-.navbar{
-    background-color:$color5;
+.navbar {
+    background-color: $color5;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 225, 255, 0.5);
+    z-index: 2;
 
-    .navbar-brand{
-        font-family: 'Trajan';
+    .navbar-brand {
+        color: rgba(255, 166, 0, 0.9);
+        font-family: 'OldMan';
+        font-size: 1.7em;
+        margin-left: 10%;
+
+        img {
+            width: 45px;
+            height: auto;
+
+
+        }
+
+        span {
+            font-size: 1em;
+            margin-left: -5px;
+        }
+
     }
 
-    .navbar-nav{
-  
+    .navbar-nav {
+        margin-right: 10%;
 
-        .nav-item{
-           padding-right:1em;
-           font-family: font("font3");
-           text-transform: uppercase;
-           font-size: .8em;
-            .nav_link{
-               
-            }
+        .nav-item {
+            padding-right: 2em;
+            font-family: font("font3");
+            text-transform: uppercase;
+            font-size: .9em;
+
+            .nav_link {}
         }
     }
 }
