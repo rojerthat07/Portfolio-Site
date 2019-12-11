@@ -22,8 +22,10 @@
     width: 70%;
     margin: 3em auto;
     display: grid;
+    text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     .column {
+        margin:1em;
         .column__paragraph {
             font-size: 1.9em;
             font-family: font("font1");
@@ -43,6 +45,11 @@
             margin: auto;
             height: auto;
             border-radius: 2px;
+        }
+
+        i{
+            color:rgb(158, 155, 155);
+            font-size:50px;
         }
     }
 }
