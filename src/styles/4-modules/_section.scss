@@ -19,7 +19,7 @@
 }
 
 .three__column {
-    width: 70%;
+    width: 90%;
     margin: 3em auto;
     display: grid;
     text-align: center;
@@ -46,10 +46,13 @@
             height: auto;
             border-radius: 2px;
         }
-
+        h1{
+                margin:0;
+        }
         i{
             color:rgb(158, 155, 155);
-            font-size:50px;
+            font-size:2em;
+            margin:.4em auto;
         }
     }
 }
