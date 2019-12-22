@@ -8,6 +8,9 @@
     height: auto;
     padding:2em;
     margin: 2% auto 2% auto;
+    @include desktop{
+        grid-template-columns: 1fr 1fr;
+    }
 
     .project {
         width: 100%;
@@ -84,7 +87,7 @@
     }
 }
 
-
+//Project Overview
 .project__overview{
     text-align: center;
     width:90%;
@@ -100,6 +103,9 @@
     background-color: rgba(238, 238, 238, 1);
     padding:5em 15em;
 
+
+   
+    
     .project__overview--exit{
         position: absolute;
         top:0;
@@ -116,6 +122,9 @@
            
             font-size: 4em;
             padding:.7em;
+            @include desktop{
+                font-size: 3em;
+            }
             
         }
         .project__overview--logo{
@@ -123,6 +132,9 @@
             width:150px;
             height:auto;
             margin:5em 0 0 0;
+            @include desktop{
+                margin:1em 0 0 0;
+            }
             
         }
         .project__overview--details{

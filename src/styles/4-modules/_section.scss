@@ -4,6 +4,9 @@
     width: 95%;
     margin: 1em auto;
     color:rgb(100, 100, 100);
+    @include desktop{
+        font-size: 2.3em;
+    }
 }
 
 //Columns
@@ -43,6 +46,9 @@
             font-size: 1.9em;
             font-family: font("font1");
             text-shadow: 1px 1px 5px gray;
+            @include desktop{
+                font-size: 1.3em;
+            }
             .column__paragraph--heading {
                 font-family: font("font5");
                 font-size: .7em;
@@ -79,9 +85,15 @@
           font-family: font("font1");
        font-size: 2.5em;
         padding:.5em 0;
+        @include desktop{
+            font-size: 2.3em;
+        }
       }
       .column__information--details{
           line-height: 2em;
+          @include desktop{
+            font-size: .8em;
+        }
       }
     }
     .column__images{
@@ -89,5 +101,6 @@
         width:80%;
         display: block;
         margin: 1em auto;
+       
       }
     }

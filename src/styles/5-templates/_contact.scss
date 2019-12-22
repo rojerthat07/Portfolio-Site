@@ -8,6 +8,10 @@
         width:60%;
         margin:auto;
         grid-template-columns: 1fr;
+
+        @include desktop{
+           width:80%;
+        }
         label  {
             font-family: font("font1");
             color:white;
@@ -20,11 +24,17 @@
             margin: .5em 0;
             border: none;
             border-radius: 5px;
+            @include desktop{
+                font-size:.9em;
+            }
         }
         textarea{
             margin: .5em 0;
             padding:.5em;
             resize: none ;
+            @include desktop{
+                font-size:.9em;
+            }
        
         }
         input[type=submit]{
@@ -39,6 +49,9 @@
             &:active{
                 background: rgb(11, 235, 85);
             }
+            @include desktop{
+                font-size:.9em;
+            }
         }
     }
     .contact__icons{
@@ -51,6 +64,9 @@
             padding: .7em;
             background-color: $color5;
             border-radius: 3em;
+            @include desktop{
+                font-size: .7em;
+            }
 
             &:hover {
                 color: rgb(58, 58, 58);
@@ -78,12 +94,18 @@
     font-size: 1.2em;
     width:80%;
         margin:3em auto 3em 0;
+        @include desktop{
+            font-size: .9em;
+        }
     }
 
     .quotation{
         width:70%;
         margin:0em 0 1em auto;
         font-size: 1.8em;
+        @include desktop{
+            font-size: 1.3em;
+        }
         .quotation__author{
             font-size: .5em;
             display: block;
