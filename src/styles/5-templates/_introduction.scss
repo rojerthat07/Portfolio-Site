@@ -4,18 +4,27 @@
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(/build/images/pexels-photo-316093.jpeg);
     background-size: cover;
     display: grid;
-
-
+    @include desktop{
+        height:100vh;
+    }
 
     .introduction__information {
         width: 40%;
         margin: 10% auto 0 10%;
+        @include desktop{
+            width: 50%;
+            margin: 20% auto 0 10%;
+        }
+        
 
         .introduction__header {
             font-family: font("font4");
             font-size: 2em;
             color: rgb(253, 255, 255);
             padding: 0;
+            @include desktop{
+                font-size: 1.5em;
+            }
         }
 
         .introduction__header-2 {
@@ -24,6 +33,9 @@
             color: rgb(58, 235, 241);
             border-bottom: 1px solid white;
             padding: 0em 0 .5em 0;
+            @include desktop{
+                font-size: 2em;
+            }
         }
 
         .introduction__text {
@@ -31,6 +43,9 @@
             font-family: font("font2");
             color: white;
             font-size: .9em;
+            @include desktop{
+                font-size: .7em;
+            }
         }
 
         .introduction__button {
@@ -44,6 +59,10 @@
             &:hover {
                 background-color: rgba(58, 235, 241, 0.8);
                 color: white;
+            }
+
+            @include desktop{
+                font-size: .6em;
             }
 
         }
