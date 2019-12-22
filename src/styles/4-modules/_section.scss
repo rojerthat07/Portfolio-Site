@@ -24,8 +24,21 @@
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
+    .column--border{
+        border:1px solid rgb(161, 161, 161);
+        border-radius: 5px;
+        &:hover{
+            border-bottom: 3px solid rgb(58, 235, 241);
+        }
+    }
     .column {
         margin:1em;
+        padding:1em;
+
+        .column__text{
+            font-size: .9em;
+        }
+
         .column__paragraph {
             font-size: 1.9em;
             font-family: font("font1");
@@ -48,6 +61,7 @@
         }
         h1{
                 margin:0;
+                padding:.5em;
         }
         i{
             color:rgb(158, 155, 155);
