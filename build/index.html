@@ -29,7 +29,7 @@
 
 <body>
   <!--Navigation-->
-  <nav class="navbar navbar-expand-md navbar-dark">
+  <nav class="navbar navbar-expand-md navbar-dark" id="introduction-information-trigger">
     <a href="index.html" class="navbar-brand"> <span>Jer Carlo
         Catallo</span>
     </a>
@@ -132,7 +132,7 @@
   <div class="project__overview" id="universeProject">
     <button class="project__overview--exit" onclick="hide('universeProject')">X</button>
     <div class="project__overview--introduction" id="project-overview-universe">
-      <img src="images/project-logo/universe-site-logo.jpg" alt="" class="project__overview--logo">
+      <img src="images/project-logo/universe-site-logo.png" alt="" class="project__overview--logo">
       <h1 class="project__overview--heading">UNIVERSE PLANETARIUM</h1>
       <p class="project__overview--details"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         Veritatis,
@@ -342,22 +342,21 @@
   </div>
   <!--Introduction-->
   <div class="introduction">
-    <div class="introduction__information">
-      <h1 class="introduction__header">Hi! I am Jer Carlo D. Catallo </h1>
+    <div class="introduction__information" id="introduction-information">
+      <h1 class="introduction__header ">Hi! I am Jer Carlo D. Catallo </h1>
       <h1 class="introduction__header-2">I'm a Front-End Web Developer based on the
         Philippines</h1>
       <p class="introduction__text">Creative Front-end Developer with a background in Design.
         I enjoy tackling projects from conception to completion but thrive
         mostly at the intersection of Design (UX/UI) and Development.</p>
-      <button class="introduction__button">Learn More</button>
+      <button class="introduction__button" id="about-trigger">Learn More</button>
     </div>
     <!--Introduction End tag-->
   </div>
-  <p id="about"></p>
   <!--About Me-->
-  <div class="about">
-    <h1 class="about__heading">About Me</h1>
-    <p class="about__paragraph">I spend my days crafting websites and creating 3d models. I work for all size of
+  <div class="about" id="about">
+    <h1 class="about__heading" >About Me</h1>
+    <p class="about__paragraph" >I spend my days crafting websites and creating 3d models. I work for all size of
       companies from small local businesses right up to huge international brands like Vogue. I’ve just spent 4 years
       living in Thailand. I speak, read and write very basic Thai. I moved back to the UK inSeptember 2015 and am now
       settled in Seaford, East Sussex.
@@ -426,10 +425,10 @@
     </div>
   </div>
   <!--Design Process and Development Process-->
-  <hr class="hr--styled">
+  <hr class="hr--styled" id="design-process-trigger">
   <div class="two__column">
-    <div class="column__information">
-      <h1 class="column__information--heading">Design process</h1>
+    <div class="column__information" id="design-process">
+      <h1 class="column__information--heading" >Design process</h1>
       <p class="column__information--details">My Design process always starts with a pencil and paper, scribbling ideas
         and concepts, thinking about the
         problem and the solution.
@@ -448,13 +447,13 @@
       <p id="projects"></p>
     </div>
   </div>
-  <hr class="hr--styled">
+  <hr class="hr--styled" id="development-process-trigger">
   <div class="two__column">
     <div class="column__images">
       <img class="column__images--image" src="images/contact-images.jpg" alt="">
       <p id="projects"></p>
     </div>
-    <div class="column__information">
+    <div class="column__information" id="development-process">
       <h1 class="column__information--heading">Development process</h1>
       <p class="column__information--details">My Design process always starts with a pencil and paper, scribbling ideas
         and concepts, thinking about the

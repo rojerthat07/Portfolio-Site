@@ -5,6 +5,9 @@ function show(id) {
 function hide(id) {
     document.getElementById(id).style.display = "none";
 }
+
+
+
 //Scroll Magic and TweenMax
 const controller = new ScrollMagic.Controller();
 //DHVSU OVERVIEW
@@ -29,6 +32,8 @@ const dhvsuScene2 = new ScrollMagic.Scene({
 })
     .setTween(dhvsutl2)
     .addTo(controller)
+
+
 //UNIVERSE OVERVIEW
 const universetl = new TimelineMax();
 const universetl2 = new TimelineMax();
@@ -51,6 +56,8 @@ const universeScene2 = new ScrollMagic.Scene({
 })
     .setTween(universetl2)
     .addTo(controller)
+
+
 //GAMING PC OVERVIEW
 const gamingPctl = new TimelineMax();
 const gamingPctl2 = new TimelineMax();
@@ -73,6 +80,8 @@ const gamingPcScene2 = new ScrollMagic.Scene({
 })
     .setTween(gamingPctl2)
     .addTo(controller)
+
+
 //BMI CALCULATOR OVERVIEW
 const bmiCalculatortl = new TimelineMax();
 const bmiCalculatortl2 = new TimelineMax();
@@ -95,5 +104,62 @@ const bmiCalculatorScene2 = new ScrollMagic.Scene({
 })
     .setTween(bmiCalculatortl2)
     .addTo(controller)
+
+
+
+//ABOUT
+const abouttl = new TimelineMax();
+//Effects
+abouttl.from("#about", 2, {
+    opacity: 0,
+    y: -100
+});
+//Trigger Scenes
+const aboutScene1 = new ScrollMagic.Scene({
+    triggerElement: "#about-trigger"
+})
+    .setTween(abouttl)
+    .addTo(controller)
+
+
+//HOW DO I WORK
+const processtl = new TimelineMax();
+const processtl2 = new TimelineMax();
+//Effects
+processtl .from("#design-process", 1, {
+    opacity: 0,
+    x: -100
+});
+processtl2 .from("#development-process", 1, {
+    opacity: 0,
+    x: 100
+});
+//Trigger Scenes
+const processScene1 = new ScrollMagic.Scene({
+    triggerElement: "#design-process-trigger"
+})
+    .setTween(processtl )
+    .addTo(controller)
+const processScene2 = new ScrollMagic.Scene({
+    triggerElement: "#development-process-trigger"
+})
+    .setTween(processtl2)
+    .addTo(controller)
+
+    
+//INTRODUCTION   
+const introtl = new TimelineMax();
+//Effects
+introtl.from("#introduction-information", 3, {
+    opacity: 0
+});
+//Trigger Scenes
+const introScene1 = new ScrollMagic.Scene({
+    triggerElement: "#introduction-information-trigger"
+})
+    .setTween(introtltl)
+    .addTo(controller)
+
+
 
 
