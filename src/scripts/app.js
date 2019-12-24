@@ -227,9 +227,10 @@ const processScene2 = new ScrollMagic.Scene({
 //INTRODUCTION   
 const introtl = new TimelineMax();
 //Effects
-introtl.from("#introduction-information", 3, {
-    opacity: 0
-});
+introtl.from("#introduction-information", 3, {x:400,opacity: 0});
+introtl.from("#introduction-information2", 3, {x:400,opacity: 0}, '=-2');
+introtl.from("#introduction-information3", 3, {x:400,opacity: 0}, '=-2');
+introtl.from("#introduction-information4", 3, {opacity: 0}, '=-2');
 //Trigger Scenes
 const introScene1 = new ScrollMagic.Scene({
     triggerElement: "#introduction-information-trigger"
