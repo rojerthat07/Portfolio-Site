@@ -69,8 +69,13 @@
     .column {
         margin:1em;
         padding:1em;
+        width:70%;
+        margin: auto;
         @include laptop{
             padding:0em;
+        }
+        @include desktop{
+            width:90%;
         }
         @include mini-laptop{
             width: 90%;
@@ -113,8 +118,17 @@
                 font-family: font("font5");
                 font-size: .7em;
                 text-shadow: none;
+                @media (max-width:1560px){
+                    font-size: .5em;
+                }
+                @include desktop{
+                    font-size: .8em;
+                }
                 @include laptop{
                     font-size: .8em;
+                }
+                @include mini-laptop{
+                    font-size: .7em;
                 }
                 @include tablet{
                     font-size: 1em;
