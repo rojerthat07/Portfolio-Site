@@ -158,6 +158,15 @@
             @include desktop{
                 font-size: 2em;
             }
+            @include laptop{
+                font-size: 1.7em;
+            }
+            @include mini-laptop{
+                font-size: 1.2em;
+            }
+            @include tablet{
+                font-size: 1em;
+            }
             
         }
         .project__overview--logo{
@@ -175,17 +184,26 @@
             @include desktop{
                 font-size: .8em;
             }
+            @include mini-laptop{
+                font-size: .7em;
+            }
         }
     }
    
     .project__information{
-     
+        text-align: justify;
         .project__information--heading{
             margin:1em 0;
+            @include mini-laptop{
+                font-size: 1.5em;
+            }
         }
         .project__information--details{
             line-height: 2em;
             @include desktop{
+                font-size: .8em;
+            }
+            @include laptop{
                 font-size: .7em;
             }
         }
@@ -193,8 +211,9 @@
 
     img{
         width:100%;
-        margin:1em;
+        margin:1em auto;
         padding:1em;
         height:auto;
+        
     }
 }
