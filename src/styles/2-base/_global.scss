@@ -13,3 +13,11 @@ body {
     width: 30%;
 }
 
+
+.pointer{
+    color:rgb(0, 248, 236);
+    animation-name: pointer-blink;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+}
+
