@@ -83,6 +83,7 @@
        
         .column__text{
             font-size: .9em;
+          
             @include laptop{
                 font-size: .7em;
                 padding:1em;
@@ -138,9 +139,12 @@
                 margin:0;
                 padding:.5em;
                 font-weight: bold;
+                font-size: 1em;
+                @include desktop{
+                    font-size: 1.3em;
+                }
                 @include laptop{
                     font-size: 1.2em;
-                   
                 }
         }
         i{
@@ -162,7 +166,7 @@
         padding:.5em 0;
         margin:0;
         @include desktop{
-            font-size: 2.3em;
+            font-size: 2em;
         }
         @include laptop{
             font-size: 1.5em;
@@ -172,7 +176,7 @@
           line-height: 2em;
           font-family: font("font2");
           @include desktop{
-            font-size: .8em;
+            font-size: .7em;
         }
         @include laptop{
             font-size: .6em;
@@ -181,13 +185,12 @@
     }
     .column__images{
       .column__images--image{
-          box-shadow: 2px 2px 2px gray;
-        width:80%;
+        box-shadow: 2px 2px 2px gray;
+        width:90%;
         display: block;
         margin: 1em auto;
         @include mini-laptop{
-            width:40%;
-        }
-       
+            display: none;
+        }  
       }
     }
