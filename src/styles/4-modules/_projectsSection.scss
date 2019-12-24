@@ -21,6 +21,9 @@
         grid-row-gap: 2em;
         padding:50px 20px;
     }
+    @include tablet{
+        grid-template-columns: 1fr;
+    }
  
 
     .project {
@@ -30,11 +33,14 @@
         display: block;
         margin: auto;
         padding: .5em 0;
-        border: 1px solid rgb(77, 77, 77);
+        border: 1px solid rgb(218, 196, 196);
         border-radius: .3em;
         transition: .2s;
         @include mini-laptop{
             width:90%;
+        }
+        @include tablet{
+            width: 70%;
         }
       
 
@@ -84,6 +90,7 @@
         .project__heading {
             font-size: 1em;
             padding: .8em;
+            color:rgb(80, 78, 78);
             font-family: font("font4");
             @include laptop{
                 font-size: .8em;

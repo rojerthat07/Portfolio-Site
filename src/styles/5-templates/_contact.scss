@@ -16,6 +16,9 @@
         @include mini-laptop{
             width: 50%;
         }
+        @include tablet{
+            width: 70%;
+        }
         label  {
             font-family: font("font1");
             color:white;

@@ -11,6 +11,7 @@
         height: 90vh;
     }
 
+
     .introduction__information {
         width: 40%;
         margin: 10% auto 0 10%;
@@ -23,6 +24,9 @@
             width: 80%;
             margin: 20% auto 0 auto;
         }
+        @include tablet{
+            margin: 30% auto 0 auto;
+        }
         
 
         .introduction__header {
@@ -32,6 +36,9 @@
             padding: 0;
             @include desktop{
                 font-size: 1.5em;
+            }
+            @include tablet{
+                font-size: 1.3em;
             }
         }
 
@@ -43,6 +50,9 @@
             padding: 0em 0 .5em 0;
             @include desktop{
                 font-size: 2em;
+            }
+            @include tablet{
+                font-size: 1.5em;
             }
         }
 
@@ -70,7 +80,10 @@
             }
 
             @include desktop{
-                font-size: .6em;
+                font-size: .8em;
+            }
+            @include tablet{
+                font-size: .9em;
             }
 
         }
