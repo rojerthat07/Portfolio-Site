@@ -209,7 +209,7 @@ processtl .from("#design-process", 1, {
 });
 processtl2 .from("#development-process", 1, {
     opacity: 0,
-    x: 100
+    x: -100
 });
 //Trigger Scenes
 const processScene1 = new ScrollMagic.Scene({
