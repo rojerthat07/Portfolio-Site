@@ -12,6 +12,16 @@
         grid-template-columns: 1fr 1fr;
         padding:50px 100px;
     }
+    @include laptop{
+        padding:50px 50px;
+    }
+    @include mini-laptop{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        grid-row-gap: 2em;
+        padding:50px 20px;
+    }
+ 
 
     .project {
         width: 100%;
@@ -23,10 +33,10 @@
         border: 1px solid rgb(77, 77, 77);
         border-radius: .3em;
         transition: .2s;
-        @include desktop{
-            width:100%;
-           
+        @include mini-laptop{
+            width:90%;
         }
+      
 
         &:hover {
             transform: scale(1.1, 1.1);
@@ -35,6 +45,7 @@
         .project__project {
             position: relative;
             cursor: pointer;
+           
 
             &:hover .project__project--view {
                 display: flex;
@@ -74,13 +85,18 @@
             font-size: 1em;
             padding: .8em;
             font-family: font("font4");
-
+            @include laptop{
+                font-size: .8em;
+            }
         }
 
         .project__information {
             font-size: .9em;
             padding: .8em 1em 0 1em;
             font-family: font("font2");
+            @include laptop{
+                font-size: .7em;
+            }
         }
 
         .project__technologies {
@@ -88,7 +104,9 @@
             font-size: .7em;
             padding: 0 4em 0 4em;
             font-family: font("font4");
-
+            @include laptop{
+                font-size: .5em;
+            }
         }
       
     }
@@ -108,11 +126,9 @@
     left:5%;
     display:none;
     background-color: rgba(238, 238, 238, 1);
-    padding:5em 15em;
+    padding:5em 5em;
 
 
-   
-    
     .project__overview--exit{
         position: absolute;
         top:0;
@@ -123,14 +139,17 @@
         border: none;
     }
     .project__overview--introduction{
-        height:75vh;
+        height:100vh;
         opacity: 0;
+        @include desktop{
+            height:70vh;
+        }
+        
         .project__overview--heading{
-           
             font-size: 4em;
             padding:.7em;
             @include desktop{
-                font-size: 3em;
+                font-size: 2em;
             }
             
         }
@@ -146,6 +165,9 @@
         }
         .project__overview--details{
             line-height: 2em;
+            @include desktop{
+                font-size: .8em;
+            }
         }
     }
    
@@ -156,6 +178,9 @@
         }
         .project__information--details{
             line-height: 2em;
+            @include desktop{
+                font-size: .7em;
+            }
         }
     }
 

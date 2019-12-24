@@ -9,5 +9,8 @@
     p{
         margin:0;
         font-size: .8em;
+        @include mini-laptop{
+            font-size: .6em;
+        }
     }
 }

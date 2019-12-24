@@ -10,6 +10,9 @@
         font-family: 'Playfair Display';
         font-size: 1.7em;
         margin-left: 10%;
+        @include desktop{
+            font-size: 1.3em;
+        }
 
         img {
             width: 45px;
@@ -33,6 +36,9 @@
             font-family: font("font3");
             text-transform: uppercase;
             font-size: .9em;
+            @include desktop{
+                font-size: .7em;
+            }
 
             .nav_link {}
         }

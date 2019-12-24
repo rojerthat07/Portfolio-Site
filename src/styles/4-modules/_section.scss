@@ -7,7 +7,15 @@
     @include desktop{
         font-size: 2.3em;
     }
+    @include laptop{
+        font-size: 2em;
+    }
+    @include mini-laptop{
+        font-size: 1.7em;
+    }
+   
 }
+
 
 //Columns
 .two__column {
@@ -19,7 +27,9 @@
     align-content: center;
     align-items: center;
     grid-column-gap: 5em;
-    
+    @include mini-laptop{
+        grid-template-columns: 1fr;
+    }
 }
 
 .three__column {
@@ -39,8 +49,15 @@
         margin:1em;
         padding:1em;
 
+        @include laptop{
+            padding:0em;
+        }
         .column__text{
             font-size: .9em;
+            @include laptop{
+                font-size: .7em;
+                padding:1em;
+            }
         }
 
         .column__paragraph {
@@ -50,10 +67,16 @@
             @include desktop{
                 font-size: 1.3em;
             }
-            .column__paragraph--heading {
+            @include laptop{
+                font-size: 1em;
+            }
+            .column__heading {
                 font-family: font("font5");
                 font-size: .7em;
                 text-shadow: none;
+                @include laptop{
+                    font-size: .8em;
+                }
             }
             img {
                 width: 25px;
@@ -69,6 +92,11 @@
         h1{
                 margin:0;
                 padding:.5em;
+                font-weight: bold;
+                @include laptop{
+                    font-size: 1.2em;
+                   
+                }
         }
         i{
             color:rgb(158, 155, 155);
@@ -82,26 +110,39 @@
     .column__information{
         width:80%;
         margin: auto;
+       
       .column__information--heading{
-          font-family: font("font1");
+          font-family: font("font3");
        font-size: 2.5em;
         padding:.5em 0;
+        margin:0;
         @include desktop{
             font-size: 2.3em;
+        }
+        @include laptop{
+            font-size: 1.5em;
         }
       }
       .column__information--details{
           line-height: 2em;
+          font-family: font("font2");
           @include desktop{
             font-size: .8em;
+        }
+        @include laptop{
+            font-size: .6em;
         }
       }
     }
     .column__images{
       .column__images--image{
+          box-shadow: 2px 2px 2px gray;
         width:80%;
         display: block;
         margin: 1em auto;
+        @include mini-laptop{
+            width:40%;
+        }
        
       }
     }

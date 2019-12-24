@@ -7,13 +7,21 @@
     @include desktop{
         height:100vh;
     }
+    @include mini-laptop{
+        height: 90vh;
+    }
 
     .introduction__information {
         width: 40%;
         margin: 10% auto 0 10%;
         @include desktop{
             width: 50%;
-            margin: 20% auto 0 10%;
+            margin: 20% auto 0 5%;
+        }
+        @include mini-laptop{
+            text-align: center;
+            width: 80%;
+            margin: 20% auto 0 auto;
         }
         
 

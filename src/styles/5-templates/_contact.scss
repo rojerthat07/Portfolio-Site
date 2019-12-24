@@ -3,14 +3,18 @@
     height:auto;
     background-color: $color4;
     color:white;
+
+    
     .contact__form{
         display:grid;
         width:60%;
         margin:auto;
         grid-template-columns: 1fr;
-
         @include desktop{
            width:80%;
+        }
+        @include mini-laptop{
+            width: 50%;
         }
         label  {
             font-family: font("font1");
@@ -27,7 +31,20 @@
             @include desktop{
                 font-size:.9em;
             }
+            @include laptop{
+                font-size: .8em;
+            }
+            @include mini-laptop{
+                font-size: .8em;
+            }
         }
+
+        label{
+            @include mini-laptop{
+                font-size: .8em;
+            } 
+        }
+
         textarea{
             margin: .5em 0;
             padding:.5em;
@@ -56,6 +73,9 @@
     }
     .contact__icons{
     text-align: right;
+    @include mini-laptop{
+        text-align: center;
+    }
         i{
             margin: 2em .5em;
             cursor: pointer;
@@ -67,6 +87,7 @@
             @include desktop{
                 font-size: .7em;
             }
+           
 
             &:hover {
                 color: rgb(58, 58, 58);
@@ -91,11 +112,17 @@
     }
 
     .contact__details{
-    font-size: 1.2em;
-    width:80%;
+        font-size: 1.2em;
+        width:80%;
         margin:3em auto 3em 0;
         @include desktop{
             font-size: .9em;
+        } 
+        @include laptop{
+            font-size: .8em;
+        }
+        @include mini-laptop{
+            margin:3em auto;
         }
     }
 
@@ -105,6 +132,12 @@
         font-size: 1.8em;
         @include desktop{
             font-size: 1.3em;
+        }
+        @include laptop{
+            font-size: 1em;
+        }
+        @include mini-laptop{
+            margin:3em auto;
         }
         .quotation__author{
             font-size: .5em;
