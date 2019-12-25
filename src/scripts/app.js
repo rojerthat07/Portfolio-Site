@@ -37,7 +37,7 @@ TypeWriter.prototype.type = function () {
     this.txtElement.innerHTML = `<span class="pointer">${this.txt}</span>`;
 
     //Initial Type Speed
-    typeSpeed = 300;
+    typeSpeed = 200;
 
     if (this.isDeleting) {
         typeSpeed /= 2;
@@ -46,16 +46,7 @@ TypeWriter.prototype.type = function () {
     if (!this.isDeleting && this.txt === fullTxt) {
         //Makes pause at end
         typeSpeed = this.wait;
-        if (fullTxt == this.words[0]) {
-            document.querySelector(".contact-txt").innerHTML += ".";
-        }
-        if (fullTxt == this.words[1]) {
-            document.querySelector(".contact-txt").innerHTML += "..";
-        }
-        if (fullTxt == this.words[2]) {
-            document.querySelector(".contact-txt").innerHTML += "...";
-        }
-
+    
         document.querySelector(".pointer").style.animationName = "pointer-blink-stop";
         //Set delete to true
         this.isDeleting = true;
@@ -87,6 +78,22 @@ function init() {
 
 //Scroll Magic and TweenMax
 const controller = new ScrollMagic.Controller();
+
+//Projects
+const projectstl = new TimelineMax();
+//Effects
+projectstl.from(".project", .5, {
+    opacity: .2,
+    
+});
+//Trigger Scenes
+const projectsScene1 = new ScrollMagic.Scene({
+    triggerElement: "#projects-trigger"
+})
+    .setTween(projectstl)
+    .addTo(controller)
+
+
 //DHVSU OVERVIEW
 const dhvsutl = new TimelineMax();
 const dhvsutl2 = new TimelineMax();
@@ -237,6 +244,8 @@ const introScene1 = new ScrollMagic.Scene({
 })
     .setTween(introtltl)
     .addTo(controller)
+
+
 
 
 
