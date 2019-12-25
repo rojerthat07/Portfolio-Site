@@ -82,8 +82,8 @@ const controller = new ScrollMagic.Controller();
 //Projects
 const projectstl = new TimelineMax();
 //Effects
-projectstl.from(".project", .5, {
-    opacity: .2,
+projectstl.from(".project", .8, {
+    opacity: 0,
     
 });
 //Trigger Scenes
