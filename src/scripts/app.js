@@ -1,3 +1,5 @@
+
+
 //PROJECT OVERVIEW SHOW AND HIDE
 function show(id) {
     document.getElementById(id).style.display = "block";
@@ -37,7 +39,7 @@ TypeWriter.prototype.type = function () {
     this.txtElement.innerHTML = `<span class="pointer">${this.txt}</span>`;
 
     //Initial Type Speed
-    typeSpeed = 200;
+    typeSpeed = 150;
 
     if (this.isDeleting) {
         typeSpeed /= 2;
@@ -73,6 +75,10 @@ function init() {
     //Initialize Typewriter
     new TypeWriter(txtElement, words, wait)
 }
+
+
+
+//Jump.js
 
 
 
@@ -237,12 +243,12 @@ const introtl = new TimelineMax();
 introtl.from("#introduction-information", 3, { x: 400, opacity: 0 });
 introtl.from("#introduction-information2", 3, { x: 400, opacity: 0 }, '=-2');
 introtl.from("#introduction-information3", 3, { x: 400, opacity: 0 }, '=-2');
-introtl.from("#introduction-information4", 3, { opacity: 0 }, '=-2');
+introtl.from("#about-trigger", 3, { opacity: 0 }, '=-1');
 //Trigger Scenes
 const introScene1 = new ScrollMagic.Scene({
     triggerElement: "#introduction-information-trigger"
 })
-    .setTween(introtltl)
+    .setTween(introtl)
     .addTo(controller)
 
 
