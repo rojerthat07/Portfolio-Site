@@ -1,5 +1,3 @@
-
-
 //PROJECT OVERVIEW SHOW AND HIDE
 function show(id) {
     document.getElementById(id).style.display = "block";
@@ -200,7 +198,7 @@ const bmiCalculatorScene2 = new ScrollMagic.Scene({
 //ABOUT
 const abouttl = new TimelineMax();
 //Effects
-abouttl.from("#about", 2, {
+abouttl.from(".about", 2, {
     opacity: 0,
     y: -100
 });

@@ -20,6 +20,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  },
   "description": ""
 }
