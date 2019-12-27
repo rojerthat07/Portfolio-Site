@@ -41,14 +41,18 @@
         <li class="nav-item">
           <a href="#" class="nav-link" id="home-link">Home</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link" id="contact-link">Contact</a>
-        </li>
+        
         <li class="nav-item">
           <a href="#" class="nav-link" id="about-link">About</a>
         </li>
         <li class="nav-item">
+          <a href="#" class="nav-link" id="work-style-link">Work Style</a>
+        </li>
+        <li class="nav-item">
           <a href="#" class="nav-link" id="projects-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="contact-link">Contact</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">Resume</a>
@@ -406,7 +410,7 @@
   </div>
 
   <!--Development Process-->
-  <h1 class="sections__heading">How Do I Work?</h1>
+  <h1 class="sections__heading" id="work-style">How Do I Work?</h1>
   <div class="three__column">
     <div class="column column--border">
       <i class="fas fa-book"></i>
@@ -601,30 +605,41 @@
   var aboutLink = document.getElementById('about-link');
   var projectsLink = document.getElementById('projects-link');
   var homeLink = document.getElementById('home-link');
+  var workStyleLink = document.getElementById('work-style-link');
+
+
+
+  
 
   learnButton.addEventListener('click', () => {
     jump('#about',{
-      offset:-40
+      offset: ((window.innerWidth <= 560) ? -50 :  -40)
     });
   })
   contactLink.addEventListener('click', () => {
     jump('#contact',{
-      offset:-40
+      offset:((window.innerWidth <= 560) ? -40 :  -40)
     });
   })
   aboutLink.addEventListener('click', () => {
     jump('#about',{
-      offset:-30
+      offset:((window.innerWidth <= 560) ? -50 :  -40)
     });
   })
 
   projectsLink.addEventListener('click', () => {
     jump('#projects',{
-      offset:20
+      offset:((window.innerWidth <= 560) ? -30 :  20)
     });
   })
   homeLink.addEventListener('click', () => {
     jump('#home-section',{
+      offset:((window.innerWidth <= 560) ? -60 :  -60)
+    });
+  })
+  workStyleLink.addEventListener('click', () => {
+    jump('#work-style',{
+      offset:((window.innerWidth <= 560) ? -80 :  -80)
     });
   })
   </script>
