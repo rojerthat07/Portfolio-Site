@@ -12,6 +12,11 @@
         height: 90vh;
     }
 
+    @media (min-height:800px){
+        height: 60vh;
+    }
+
+
 
     .introduction__information {
         width: 40%;
@@ -42,6 +47,9 @@
             @include tablet{
                 font-size: 1.3em;
             }
+            @include mobile{
+                font-size: 1.1em;
+            }
         }
 
         .introduction__header-2 {
@@ -55,6 +63,9 @@
             }
             @include tablet{
                 font-size: 1.5em;
+            }
+            @include mobile{
+                font-size: 1.2em;
             }
         }
 
@@ -86,6 +97,9 @@
             }
             @include tablet{
                 font-size: .7em;
+            }
+            @include mobile{
+                font-size: .6em;
             }
 
         }

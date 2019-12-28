@@ -84,6 +84,9 @@
         @include tablet{
             width: 70%;
         }
+        @include mobile{
+            width: 80%;
+        }
 
        
         .column__text{
@@ -173,6 +176,9 @@
     .column__information{
         width:80%;
         margin: auto;
+        @include mobile{
+            width: 80%;
+        }
        
       .column__information--heading{
           font-family: font("font3");
