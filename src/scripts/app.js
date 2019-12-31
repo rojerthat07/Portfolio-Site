@@ -197,16 +197,26 @@ const bmiCalculatorScene2 = new ScrollMagic.Scene({
 
 //ABOUT
 const abouttl = new TimelineMax();
+const abouttl2 = new TimelineMax();
 //Effects
 abouttl.from(".about", 2, {
     opacity: 0,
     y: -100
+});
+abouttl2.from(".about__emphasis", 2.5, {
+    opacity: 0,
+   y: -100
 });
 //Trigger Scenes
 const aboutScene1 = new ScrollMagic.Scene({
     triggerElement: "#about-trigger"
 })
     .setTween(abouttl)
+    .addTo(controller)
+    const aboutScene2 = new ScrollMagic.Scene({
+        triggerElement: "#about-trigger"
+    })
+    .setTween(abouttl2)
     .addTo(controller)
 
 
@@ -248,6 +258,7 @@ const introScene1 = new ScrollMagic.Scene({
 })
     .setTween(introtl)
     .addTo(controller)
+
 
 
 

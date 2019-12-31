@@ -25,6 +25,7 @@
         margin:0 2em;
         font-family: font("font2");
         font-size: 1em;
+        color:rgb(75, 73, 73);
         text-align: center;
         line-height: 2em;
         @include desktop{
@@ -33,7 +34,21 @@
         @include tablet{
             font-size: .6em;
         }
+
+        .about__emphasis{
+            display: inline-block;
+            text-transform: uppercase;
+            color:rgb(0, 0, 0);
+            font-size: 1.7em;
+            padding:.3em .3em;
+            font-weight: bold;
+          
+        }
+       
+        
     }
+
+ 
 
   
 
