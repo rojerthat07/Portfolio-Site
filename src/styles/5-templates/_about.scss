@@ -12,6 +12,7 @@
         border-bottom: 1px solid rgb(168, 168, 168);
         padding: .3em;
         margin: .4em;
+        
         @include desktop{
             font-size: 2.5em;
         }
@@ -25,7 +26,7 @@
         margin:0 2em;
         font-family: font("font2");
         font-size: 1em;
-        color:rgb(75, 73, 73);
+        color:rgb(0, 0, 0);
         text-align: center;
         line-height: 2em;
         @include desktop{
@@ -38,10 +39,12 @@
         .about__emphasis{
             display: inline-block;
             text-transform: uppercase;
-            color:rgb(0, 0, 0);
+            color:rgb(245, 160, 2);
             font-size: 1.7em;
             padding:.3em .3em;
             font-weight: bold;
+
+         
           
         }
        
