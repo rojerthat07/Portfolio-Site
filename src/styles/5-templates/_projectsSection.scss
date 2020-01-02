@@ -188,6 +188,8 @@
         }
         .project__overview--details{
             line-height: 2em;
+            width:80%;
+            margin: auto;
             @include desktop{
                 font-size: .8em;
             }
