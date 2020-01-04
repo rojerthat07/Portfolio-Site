@@ -136,7 +136,11 @@
     left:5%;
     display:none;
     background-color: rgba(238, 238, 238, 1);
-    padding:5em 5em;
+    padding:4em 4em;
+  
+    @include tablet{
+        padding:3em 0em;
+    }
     @include mobile{
         padding:3em 2em;
     }
@@ -144,24 +148,28 @@
 
     .project__overview--exit{
         position: fixed;
-        top:15%;
-        right:6%;
-        padding:2em;
+        top:20%;
+        right:10%;
+        padding:.2em;
+        z-index: 2;
         background-color: transparent;
         color:black;
         border: none;
         cursor: pointer;
+        @include tablet{
+            top:18%;
+        right:12%;
+        }
     }
     .project__overview--introduction{
-        height:100vh;
+        height:100%;
         opacity: 0;
-        @include desktop{
-            height:70vh;
-        }
+       
         
         .project__overview--heading{
             font-size: 4em;
             padding:.7em;
+            font-family: font("font3");
             @include desktop{
                 font-size: 2em;
             }
@@ -169,10 +177,10 @@
                 font-size: 1.7em;
             }
             @include mini-laptop{
-                font-size: 1.2em;
+                font-size: 1.4em;
             }
             @include tablet{
-                font-size: 1em;
+                font-size: 1.4em;
             }
             
         }
@@ -196,6 +204,7 @@
             @include mini-laptop{
                 font-size: .7em;
             }
+           
             @include mobile{
                 font-size: .6em;
             }
@@ -222,6 +231,10 @@
             }
             @include laptop{
                 font-size: .7em;
+            }
+            @include tablet{
+                padding:0em 3em;
+                font-size: .6em;
             }
         }
     }

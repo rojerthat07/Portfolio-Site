@@ -150,6 +150,9 @@
             margin:3em auto;
             width:70%;
         }
+        @include tablet{
+            text-align:center;
+        }
         .quotation__author{
             font-size: .5em;
             display: block;
@@ -203,9 +206,9 @@
 
     .contact-error__exit-button{
         position: fixed;
-        top:10%;
-        right:1%;
-        padding:2em;
+        top:12%;
+        right:2%;
+      
         background-color: transparent;
         color:black;
         border: none;
