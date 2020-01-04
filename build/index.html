@@ -63,6 +63,12 @@
     
     <!--Navigation End tag-->
   </nav>
+  <!--contact Error Message-->
+<div class="contact-error" id="contact-error">
+  <div class="contact-error__message">At the moment this form is not available.</div>
+  <div class="contact-error__message">Please email me at <span class="contact-error__email"> jercarlocatallo@gmail.com</span></div>
+    <button class="contact-error__exit-button" onclick="hide('contact-error')">X</button>
+</div>
   <!--Project Overview List-->
   <!--Project 1 Overview-->
   <div class="project__overview" id="dhvsuProject">
@@ -243,7 +249,7 @@
         from April to August.</p>
       <br>
       <p class="about__paragraph">
-        I do lift weights and had a good deal of knowledge in the world of fitness. <span
+        I do lift weights and had a good deal of knowledge in the fitness industry. <span
           class="about__emphasis">WORKING OUT</span> is Hard and Full of Pain
         but it is the only way to improve always remember that “Success isn’t always about greatness. It’s about
         consistency. Consistent hard work gains success. Greatness will come.”.
@@ -469,11 +475,11 @@
         style="visibility: visible;" class="contact-txt" data-wait="4000"
         data-words='["GET IN TOUCH!", "TEAM UP WITH ME!","BE YOUR WEB DEVELOPER!"]'></a></h1>
     <div class="two__column">
-      <form action="" class="contact__form">
+      <form action="#contact" class="contact__form">
         <label>Client's Name: </label><input type="text">
         <label>Client's Email: </label><input type="text">
         <label>Project's Detail: </label> <textarea cols="30" rows="10"></textarea>
-        <input type="submit" value="Send Email">
+        <input type="submit" value="Send Email" onclick="show('contact-error')">
       </form>
       <div>
 

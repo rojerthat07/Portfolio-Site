@@ -1,10 +1,13 @@
 //PROJECT OVERVIEW SHOW AND HIDE
 function show(id) {
-    document.getElementById(id).style.display = "block";
+    document.getElementById(id).style.display = "grid";
 }
 function hide(id) {
     document.getElementById(id).style.display = "none";
 }
+
+
+
 
 //Typing Effect
 const TypeWriter = function (txtElement, words, wait = 5000) {
