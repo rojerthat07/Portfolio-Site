@@ -79,14 +79,13 @@
     .column {
         margin:1em;
         padding:1em;
-        width:70%;
+        width:100%;
         margin: auto;
+    
         @include laptop{
             padding:0em;
         }
-        @include desktop{
-            width:100%;
-        }
+      
         @include mini-laptop{
             width: 70%;
             margin: 1em auto;
