@@ -1,92 +1,106 @@
 //PROJECT OVERVIEW SHOW AND HIDE
 function show(id) {
-    document.getElementById(id).style.display = "block";
+    document.getElementById(id).style.display = "grid";
 }
 function hide(id) {
     document.getElementById(id).style.display = "none";
 }
 
+
+
+
 //Typing Effect
-const TypeWriter = function(txtElement,words,wait = 5000){
+const TypeWriter = function (txtElement, words, wait = 5000) {
     this.txtElement = txtElement;
-    this.words = words; 
+    this.words = words;
     this.txt = '';
     this.wordIndex = 0;
-    this.wait = parseInt(wait,10);
+    this.wait = parseInt(wait, 10);
     this.type();
     this.isDeleting = false;
 }
 
-    //Type Method
-    TypeWriter.prototype.type = function(){
-        //Current index of word
-        const current = this.wordIndex % this.words.length;
-        //Get full text of current
-        const fullTxt = this.words[current];
+//Type Method
+TypeWriter.prototype.type = function () {
+    //Current index of word
+    const current = this.wordIndex % this.words.length;
+    //Get full text of current
+    const fullTxt = this.words[current];
 
-        if(this.isDeleting){
-            //Remove Char
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            //Add Char
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-
-        //Insert txt into element
-        this.txtElement.innerHTML = `<span class="pointer">${this.txt}</span>`;
-
-        //Initial Type Speed
-        typeSpeed = 300;
-
-        if(this.isDeleting){
-            typeSpeed /= 2;
-        }
-
-        if(!this.isDeleting && this.txt === fullTxt){
-            //Makes pause at end
-            typeSpeed = this.wait;
-            if( fullTxt == this.words[0]){
-                document.querySelector(".contact-txt").innerHTML += ".";
-            }
-            if( fullTxt == this.words[1]){
-                document.querySelector(".contact-txt").innerHTML += "..";
-            }
-            if( fullTxt == this.words[2]){
-                document.querySelector(".contact-txt").innerHTML += "...";
-            }
-           
-            document.querySelector(".pointer").style.animationName = "pointer-blink-stop";
-            //Set delete to true
-            this.isDeleting = true;
-        }else if(this.isDeleting && this.txt === ''){
-            this.isDeleting = false;
-              // Move to next word
-      this.wordIndex++;
-            this.typeSpeed = 500;
-        }
-
- 
-        setTimeout(()=> this.type(), typeSpeed)
+    if (this.isDeleting) {
+        //Remove Char
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+        //Add Char
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
 
-   
-    //Init on DOM Load
-document.addEventListener("DOMContentLoaded",init);
-    //Init App
-function init(){
+    //Insert txt into element
+    this.txtElement.innerHTML = `<span class="pointer">${this.txt}</span>`;
+
+    //Initial Type Speed
+    typeSpeed = 150;
+
+    if (this.isDeleting) {
+        typeSpeed /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+        //Makes pause at end
+        typeSpeed = this.wait;
+    
+        document.querySelector(".pointer").style.animationName = "pointer-blink-stop";
+        //Set delete to true
+        this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        // Move to next word
+        this.wordIndex++;
+        this.typeSpeed = 500;
+    }
+
+
+    setTimeout(() => this.type(), typeSpeed)
+}
+
+
+
+//Init on DOM Load
+document.addEventListener("DOMContentLoaded", init);
+//Init App
+function init() {
     const txtElement = document.querySelector(".contact-txt");
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
     //Initialize Typewriter
-    new TypeWriter(txtElement,words,wait)
+    new TypeWriter(txtElement, words, wait)
 }
+
+
+
+//Jump.js
 
 
 
 //Scroll Magic and TweenMax
 const controller = new ScrollMagic.Controller();
+
+//Projects
+const projectstl = new TimelineMax();
+//Effects
+projectstl.from(".project", .8, {
+    opacity: 0,
+    
+});
+//Trigger Scenes
+const projectsScene1 = new ScrollMagic.Scene({
+    triggerElement: "#projects-trigger"
+})
+    .setTween(projectstl)
+    .addTo(controller)
+
+
 //DHVSU OVERVIEW
 const dhvsutl = new TimelineMax();
 const dhvsutl2 = new TimelineMax();
@@ -186,10 +200,15 @@ const bmiCalculatorScene2 = new ScrollMagic.Scene({
 
 //ABOUT
 const abouttl = new TimelineMax();
+const abouttl2 = new TimelineMax();
 //Effects
-abouttl.from("#about", 2, {
+abouttl.from(".about", 2, {
     opacity: 0,
     y: -100
+});
+abouttl2.from(".about__emphasis", 2.5, {
+    opacity: 0,
+   y: -100
 });
 //Trigger Scenes
 const aboutScene1 = new ScrollMagic.Scene({
@@ -197,17 +216,22 @@ const aboutScene1 = new ScrollMagic.Scene({
 })
     .setTween(abouttl)
     .addTo(controller)
+    const aboutScene2 = new ScrollMagic.Scene({
+        triggerElement: "#about-trigger"
+    })
+    .setTween(abouttl2)
+    .addTo(controller)
 
 
 //HOW DO I WORK
 const processtl = new TimelineMax();
 const processtl2 = new TimelineMax();
 //Effects
-processtl .from("#design-process", 1, {
+processtl.from("#design-process", 1, {
     opacity: 0,
     x: -100
 });
-processtl2 .from("#development-process", 1, {
+processtl2.from("#development-process", 1, {
     opacity: 0,
     x: -100
 });
@@ -215,7 +239,7 @@ processtl2 .from("#development-process", 1, {
 const processScene1 = new ScrollMagic.Scene({
     triggerElement: "#design-process-trigger"
 })
-    .setTween(processtl )
+    .setTween(processtl)
     .addTo(controller)
 const processScene2 = new ScrollMagic.Scene({
     triggerElement: "#development-process-trigger"
@@ -223,20 +247,23 @@ const processScene2 = new ScrollMagic.Scene({
     .setTween(processtl2)
     .addTo(controller)
 
-    
+
 //INTRODUCTION   
 const introtl = new TimelineMax();
 //Effects
-introtl.from("#introduction-information", 3, {x:400,opacity: 0});
-introtl.from("#introduction-information2", 3, {x:400,opacity: 0}, '=-2');
-introtl.from("#introduction-information3", 3, {x:400,opacity: 0}, '=-2');
-introtl.from("#introduction-information4", 3, {opacity: 0}, '=-2');
+introtl.from("#introduction-information", 3, { x: 400, opacity: 0 });
+introtl.from("#introduction-information2", 3, { x: 400, opacity: 0 }, '=-2');
+introtl.from("#introduction-information3", 3, { x: 400, opacity: 0 }, '=-2');
+introtl.from("#about-trigger", 3, { opacity: 0 }, '=-1');
 //Trigger Scenes
 const introScene1 = new ScrollMagic.Scene({
     triggerElement: "#introduction-information-trigger"
 })
-    .setTween(introtltl)
+    .setTween(introtl)
     .addTo(controller)
+
+
+
 
 
 
