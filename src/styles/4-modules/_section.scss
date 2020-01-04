@@ -31,6 +31,7 @@
     align-content: center;
     align-items: center;
     grid-column-gap: 5em;
+    max-width: 2000px;
     @include mini-laptop{
         grid-template-columns: 1fr;
     }

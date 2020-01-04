@@ -8,12 +8,17 @@
     .navbar-brand {
         color: rgba(255, 166, 0, 0.9);
         font-family: 'Playfair Display';
-        font-size: 1.7em;
+        text-transform: uppercase;
+        font-size: 1em;
         margin-left: 10%;
-        @include desktop{
-            font-size: 1.3em;
-        }
+
+     
+       
         @media (max-width:900px){
+            font-size: .8em;
+        }
+
+        @include mini-laptop{
             font-size: 1em;
         }
 
@@ -38,14 +43,14 @@
             padding-right: 2em;
             font-family: font("font3");
             text-transform: uppercase;
-            font-size: .9em;
+            font-size: .8em;
            
            
             @include desktop{
-                font-size: .7em;
+                font-size: .6em;
             }
             @media (max-width:900px){
-                font-size: .6em;
+                font-size: .5em;
             }
 
             .nav-link {

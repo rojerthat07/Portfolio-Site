@@ -195,8 +195,8 @@
             cursor: pointer;
 
             &:hover{
-                color:red;
-                text-shadow: 1px 1px 1px red;
+                color:rgb(228, 11, 11);
+                text-shadow: 1px 1px 1px white;
             }
         }
     }
@@ -204,7 +204,7 @@
     .contact-error__exit-button{
         position: fixed;
         top:10%;
-        right:2%;
+        right:1%;
         padding:2em;
         background-color: transparent;
         color:black;

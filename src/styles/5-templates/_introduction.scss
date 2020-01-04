@@ -4,6 +4,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/pexels-photo-316093.jpeg);
     background-size: cover;
     display: grid;
+    max-height: 1200px;
 
     @include desktop{
         height:100vh;
@@ -18,11 +19,11 @@
 
     .introduction__information {
         width: 40%;
-        margin: 10% auto 0 10%;
+        margin: 7% auto 0 10%;
   
         @include desktop{
             width: 50%;
-            margin: 20% auto 0 5%;
+            margin: 15% auto 0 5%;
         }
         @include mini-laptop{
             text-align: center;
