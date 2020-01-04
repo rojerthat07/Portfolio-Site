@@ -130,6 +130,9 @@
         @include mini-laptop{
             margin:3em auto;
         }
+        @include tablet{
+            text-align: center;
+        }
     }
 
     .quotation{
