@@ -206,6 +206,9 @@
    
     .project__information{
         text-align: justify;
+        @include mini-laptop{
+           text-align: center;
+        }
         .project__information--heading{
             margin:1em 0;
             @include mini-laptop{
