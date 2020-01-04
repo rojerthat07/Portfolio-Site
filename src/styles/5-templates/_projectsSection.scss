@@ -211,7 +211,7 @@
         }
         .project__information--heading{
             margin:1em 0;
-            @include mini-laptop{
+            @include laptop{
                 font-size: 1.5em;
             }
         }
