@@ -9,10 +9,12 @@
 
     .about__heading {
         font-size: 3em;
-        text-align: center;
+
         border-bottom: 1px solid rgb(168, 168, 168);
         padding: .3em;
         margin: .4em;
+        display: inline-block;
+        text-transform: lowercase;
         
         @include desktop{
             font-size: 2.5em;
@@ -28,7 +30,7 @@
         font-family: font("font2");
         font-size: 1em;
         color:rgb(0, 0, 0);
-        text-align: center;
+        text-align: left;
         line-height: 2em;
         @include desktop{
             font-size: .8em;

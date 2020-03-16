@@ -6,9 +6,7 @@ function hide(id) {
     document.getElementById(id).style.display = "none";
 }
 
-
-
-
+console.log(1+1);
 //Typing Effect
 const TypeWriter = function (txtElement, words, wait = 5000) {
     this.txtElement = txtElement;
@@ -60,7 +58,6 @@ TypeWriter.prototype.type = function () {
         this.typeSpeed = 500;
     }
 
-
     setTimeout(() => this.type(), typeSpeed)
 }
 
@@ -80,7 +77,6 @@ function init() {
 
 
 //Jump.js
-
 
 
 //Scroll Magic and TweenMax

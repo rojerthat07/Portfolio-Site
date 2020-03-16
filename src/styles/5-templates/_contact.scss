@@ -54,6 +54,7 @@
         textarea{
             margin: .5em 0;
             padding:.5em;
+            border-radius: 5px;
             resize: none ;
             @include desktop{
                 font-size:.9em;
@@ -62,18 +63,21 @@
         }
         input[type=submit]{
             font-family: font("font3");
-            background: rgb(11, 235, 85);
-            border:none;
-            font-size: 1.3em;
-            padding:.3em;
+            background: rgb(3, 217, 255);
+          
+            border: transparentize($color: #000000, $amount: 0);
+            font-size: 3em;
+            padding:.8em;
+
             &:hover{
-                background: rgb(12, 207, 77);
+                background: rgba(3, 217, 255,0.9);
+                font-weight: bold;
             }
             &:active{
                 background: rgb(11, 235, 85);
             }
             @include desktop{
-                font-size:.9em;
+                font-size:.8em;
             }
         }
     }
