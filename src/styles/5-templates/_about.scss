@@ -1,19 +1,35 @@
 .about {
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin: 5% auto;
+    margin: 0% auto;
+    text-align: center;
     @include mobile{
         width: 90%;
         text-align: center;
     }
 
+    .two__column{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        @include mini-laptop{
+            grid-template-columns: 1fr;
+        }
+    
+    }
+    img{
+        width:90%;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px gray;
+        display: block;
+        margin: auto;
+    }
     .about__heading {
         font-size: 3em;
-
         border-bottom: 1px solid rgb(168, 168, 168);
         padding: .3em;
         margin: .4em;
-        display: inline-block;
+        text-align: left;
         text-transform: uppercase;
         
         @include desktop{
@@ -26,14 +42,14 @@
     }
 
     .about__paragraph {
-        margin:0 2em;
+        margin:1em 0em;
         font-family: font("font2");
         font-size: 1em;
         color:rgb(0, 0, 0);
-        text-align: left;
+        text-align: center;
         line-height: 2em;
         @include desktop{
-            font-size: .8em;
+            font-size: .9em;
         }
         
         @include mini-laptop{
