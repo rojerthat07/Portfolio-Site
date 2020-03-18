@@ -1,0 +1,38 @@
+.skills {
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    @include mobile{
+        width: 90%;
+        text-align: center;
+    }
+
+    .skills__heading {
+        font-size: 3em;
+
+        border-bottom: 1px solid rgb(168, 168, 168);
+        padding: .3em;
+        margin: .4em;
+        display: inline-block;
+        text-transform: uppercase;
+        
+        @include desktop{
+            font-size: 2.5em;
+        }
+        @include tablet{
+            font-size: 2em;
+        }
+        
+    }
+
+
+   
+       
+        
+    }
+
+ 
+
+  
+
+
