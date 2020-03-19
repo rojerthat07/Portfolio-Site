@@ -7,20 +7,20 @@
 
     .navbar-brand {
         color: rgba(255, 166, 0, 0.9);
-        font-family: font('font2');
+        font-family: font('font6');
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 1.3em;
         margin-left: 10%;
 
      
        
-        @media (max-width:900px){
-            font-size: .8em;
-        }
+        // @media (max-width:900px){
+        //     font-size: .8em;
+        // }
 
-        @include mini-laptop{
-            font-size: 1em;
-        }
+        // @include mini-laptop{
+        //     font-size: 1em;
+        // }
 
         img {
             width: 45px;
@@ -41,17 +41,12 @@
 
         .nav-item {
             padding-right: 2em;
-            font-family: font("font3");
+            font-family: font('font6');
             text-transform: uppercase;
             font-size: .8em;
            
            
-            @include desktop{
-                font-size: .6em;
-            }
-            @media (max-width:900px){
-                font-size: .5em;
-            }
+         
 
             .nav-link {
                 color:rgb(200, 200, 200);
