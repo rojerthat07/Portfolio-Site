@@ -1,3 +1,5 @@
+//Note make photo gallery
+
 .about {
     width: 90%;
     height: auto;
@@ -12,17 +14,38 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
+        margin:3em auto;
         @include mini-laptop{
             grid-template-columns: 1fr;
         }
+
+        .column{
+            .column__heading{
+                font-family: 'Permanent Marker', cursive;
+                font-size: 2em;
+                @include mini-laptop{
+                    font-size: 1.5em;
+                  }  
+            }
+            .column__image{
+                width: 100%;
+                margin:1em auto;
+                @include mini-laptop{
+                  width: 70%;
+                }  
+            }
+        }
     
     }
+
     img{
         width:90%;
         border-radius: 5px;
-        box-shadow: 5px 5px 5px gray;
+      
         display: block;
         margin: auto;
+
+      
     }
     .about__heading {
         font-size: 3em;
@@ -42,7 +65,7 @@
     }
 
     .about__paragraph {
-        margin:1em 0em;
+        margin:0em 0em;
         font-family: font("font2");
         font-size: 1em;
         color:rgb(0, 0, 0);
