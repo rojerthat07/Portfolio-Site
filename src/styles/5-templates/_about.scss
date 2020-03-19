@@ -36,8 +36,11 @@
                 width: 100%;
                 margin:1em auto;
                 @include mini-laptop{
-                  width: 70%;
+                  width: 60%;
                 }  
+                @include tablet{
+                    width: 70%;
+                }
             }
 
           
@@ -83,7 +86,7 @@
         }
         
         @include mini-laptop{
-            font-size: .6em;
+            font-size: .7em;
         }
 
         .about__emphasis{
