@@ -6,15 +6,12 @@
     display: grid;
     max-height: 1200px;
 
-
     @include desktop{
         height:100vh;
     }
     @include mini-laptop{
         height: 90vh;
     }
-
-
 
     .introduction__information {
         width: 40%;

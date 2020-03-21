@@ -127,6 +127,8 @@
                 text-shadow: none;
                 line-height: 2em;
             }
+
+            3
             .column__heading {
                 font-family: font("font5");
                 font-size: .7em;
@@ -191,8 +193,8 @@
         }
        
       .column__information--heading{
-          font-family: font("font3");
-       font-size: 2.5em;
+        font-family: font("font3");
+        font-size: 2.5em;
         padding:.5em 0;
         margin:0;
         @include desktop{
@@ -214,6 +216,7 @@
       }
     }
     .column__images{
+     
       .column__images--image{
         box-shadow: 2px 2px 2px gray;
         width:90%;

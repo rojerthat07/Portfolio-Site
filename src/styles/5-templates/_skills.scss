@@ -1,18 +1,49 @@
 .skills {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     width: 80%;
-    height: auto;
+    height:100%;
+    padding:4em 3em;
+    border: 5px double gold;
     margin: 5% auto;
     @include mobile{
         width: 90%;
         text-align: center;
     }
 
+    .skills__skills{
+        font-size: 1.3em;
+    }
+
+    .two-column{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include mini-laptop{
+            grid-template-columns: 1fr;
+           
+        }
+        .column{
+        text-align: center;
+            .column__image{
+                width:70%;
+                display: block;
+                margin: auto;
+                margin-top:2em;
+                @include mini-laptop{
+                    display: none;
+                }  
+            }
+        }
+    }
+
     .skills__heading {
         font-size: 3em;
-
+        font-family: font("font2");
+        padding:.3em;
         border-bottom: 1px solid rgb(168, 168, 168);
-        padding: .3em;
-        margin: .4em;
+        margin:0em 0em 1em 0em;
+        
         display: inline-block;
         text-transform: uppercase;
         
