@@ -28,12 +28,43 @@
             font-size: 1em;
             margin: .5em 0;
         }
+
+        .contact__input{
+            position: relative;
+            .contact__input-icon{
+                position: absolute;
+                top:8px;
+                left:2px;
+                padding:.5em;
+                color:rgb(143, 143, 143);
+                z-index: 1;
+                @media (max-width:1300px){
+                    top:10px;
+               
+                }
+                @include desktop{
+                    top:8px;
+             
+                }
+                @include laptop{
+                    top:7px;
+                    left:1px;
+                }
+            }
+            .contact__input-input{
+               padding-left:35px
+            }
+        }
+
         input{
+            width: 100%;
             padding:.5em;
             font-size:1em;
             margin: .5em 0;
-            border: none;
-            border-radius: 5px;
+            border:2px solid  $color1;
+            border-radius: 3px;
+
+            background-color: rgb(255, 255, 255);
             @include desktop{
                 font-size:.9em;
             }
@@ -56,28 +87,35 @@
             padding:.5em;
             border-radius: 5px;
             resize: none ;
+            border:2px solid  $color1;
+            background-color: rgb(255, 255, 255);
             @include desktop{
                 font-size:.9em;
             }
        
         }
         input[type=submit]{
-            font-family: font("font3");
-            background: rgb(3, 217, 255);
-          
-            border: transparentize($color: #000000, $amount: 0);
-            font-size: 3em;
-            padding:.8em;
+            font-family: font("font5");
+            background: none;
+            border: 2px solid white;
+            border-radius: 2px;
+            color:rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            font-size: 1em;
+            padding:.5em;
+            text-transform: uppercase;
+          transition: 1s;
 
             &:hover{
-                background: rgba(3, 217, 255,0.9);
-                font-weight: bold;
+              
+                background: $color2;
             }
             &:active{
                 background: rgb(11, 235, 85);
             }
             @include desktop{
-                font-size:.8em;
+                font-size:.9em;
             }
         }
     }
@@ -172,7 +210,7 @@
     text-align: center;
     width:100%;
     height:100vh;
-    z-index: 1;
+    z-index: 2;
     margin:3em auto;
     border-radius: 2px;
     position: sticky;   
@@ -210,8 +248,8 @@
 
     .contact-error__exit-button{
         position: fixed;
-        top:12%;
-        right:2%;
+        top:4%;
+        right:3%;
       
         background-color: transparent;
         color:black;

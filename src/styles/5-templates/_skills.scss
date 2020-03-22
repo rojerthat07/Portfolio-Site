@@ -7,6 +7,7 @@
     padding:4em 3em;
     border: 5px double gold;
     margin: 5% auto;
+    
     @include mobile{
         width: 90%;
         text-align: center;
@@ -31,9 +32,15 @@
                 margin: auto;
                 margin-top:2em;
                 @include mini-laptop{
-                    display: none;
+                    width:40%;
+                    margin-top:0em;
                 }  
             }
+        }
+        .column2-1{
+            @include mini-laptop{
+                grid-row: 1;
+            }  
         }
     }
 

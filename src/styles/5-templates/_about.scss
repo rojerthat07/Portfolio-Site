@@ -76,7 +76,7 @@
 
     .about__paragraph {
         margin:0em 0em;
-        font-family: font("font2");
+     
         font-size: 1em;
         color:rgb(0, 0, 0);
         text-align: center;
@@ -86,7 +86,7 @@
         }
         
         @include mini-laptop{
-            font-size: .7em;
+            font-size: .8em;
         }
 
         .about__emphasis{

@@ -53,7 +53,7 @@
           <a href="#" class="nav-link" id="contact-link">Contact</a>
         </li>
         <li class="nav-item">
-          <a target="_blank" href="https://drive.google.com/file/d/1nuiERxtNQzDv7DJwmIPRZHIeNxdsqSeK/view?usp=sharing"
+          <a target="_blank" href="https://drive.google.com/file/d/1gRD-j1Gxkg_fm80I1ybqieOmfatHbMyJ/view?usp=sharing"
             class="nav-link">Resume</a>
         </li>
       </ul>
@@ -273,20 +273,19 @@
 
       <div class="two-column">
         <div class="column">
-          <h1 class="skills__heading">deliverables</h1>
-          <h3 class="skills__skills">Front-End Web Development</h3>
-          <h3 class="skills__skills">Web Design</h3>
-          <h3 class="skills__skills">PSD to HTML</h3>
-          <h3 class="skills__skills"> Landing Page Web Design</h3>
-          <h3 class="skills__skills">UI and UX Design</h3>
-          <h3 class="skills__skills">Website Redesign</h3>
+          <h1 class="skills__heading">Deliverables</h1>
+          <h3 class="skills__skills skill1">Front-End Web Development</h3>
+          <h3 class="skills__skills skill2">Responsive Web Design</h3>
+          <h3 class="skills__skills skill3">Landing Page Web Design</h3>
+          <h3 class="skills__skills skill4">PSD to HTML</h3>
+          <h3 class="skills__skills skill5">UI and UX Design</h3>
+          <h3 class="skills__skills skill6">Website Redesign</h3>
         </div>
-        <div class="column">
-          <img class="column__image" src="./images/services-gears.png" alt="">
+        <div class="column column2-1">
+          <img class="column__image skill-image" src="./images/services-gears.png" alt="">
         </div>
       </div>
     </div>
-    
 
 
       <div class="three__column">
@@ -298,20 +297,18 @@
             <br>SASS <img src="images/icons/sass-logo.png" alt="">
             <br>JavaScript <img src="images/icons/javascript.svg" alt="">
             <br>PHP <img src="images/icons/php-logo.png" alt="">
+               
 
 
         </div>
         <div class="column">
           <p class="column__paragraph">
             <span class="column__heading">Skills/Techonologies:</span>
-
+            <br>ReactJS <img src="images/icons/React.js_logo-512.png" alt="">
             <br>Wordpress <img src="images/icons/wordpress-logo.png" alt="">
             <br>Bootstrap <img src="images/icons/bootstrap-logo.png" alt="">
-            <br>Git <img src="images/icons/git-logo.png" alt="">
             <br>Github <img src="images/icons/github-logo.png" alt="">
             <br>Adobe PS <img src="images/icons/photoshop-logo.jpg" alt="">
-            <br>Figma <img src="images/icons/figma-logo.png" alt="">
-            <br>NPM <img src="images/icons/npm-logo.png" alt="">
 
           </p>
         </div>
@@ -483,13 +480,21 @@
   <!--Contact Me-->
   <div class="contact" id="contact">
     <h1 class="sections__heading"
-      style="color:rgb(211, 248, 0);visibility: hidden;margin-left: -3px;font-family: 'Roboto Medium'">s<span
+      style="color:rgb(211, 248, 0);visibility: hidden;margin-left: -3px;font-family: 'Oswald Light'">s<span
         style="visibility: visible;" class="contact-txt" data-wait="4000"
         data-words='["GET IN TOUCH!", "TEAM UP WITH ME!","BE YOUR WEB DEVELOPER!"]'></a></h1>
     <div class="two__column">
       <form action="#contact" class="contact__form">
-        <label>Client's Name: </label><input type="text">
-        <label>Client's Email: </label><input type="text">
+        <div class="contact__input">
+          <i class="fas fa-user contact__input-icon"></i>
+          <input type="text" placeholder="Enter Name"  class="contact__input-input">
+        </div>
+   
+        <div class="contact__input">
+          <i class="fas fa-envelope contact__input-icon"></i>
+          
+          <input type="text" placeholder="Enter Email"  class="contact__input-input">
+        </div>
         <label>Project's Detail: </label> <textarea cols="30" rows="10"></textarea>
         <input type="submit" value="Send Email" onclick="show('contact-error')">
       </form>
@@ -504,8 +509,9 @@
           <span class="quotation__author">-Conrad Hilton</span></p>
         <div class="contact__icons">
           <a href="https://github.com/rojerthat07" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/jer-carlo-catallo-52b7201a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://www.facebook.com/jercarlo.jc" target="_blank"> <i class="fab fa-facebook-square"></i></a>
-          <a href="https://twitter.com/jer_carlo" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        
           <a href="https://www.instagram.com/jercarllo/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>

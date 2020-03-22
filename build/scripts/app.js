@@ -1,6 +1,7 @@
 //PROJECT OVERVIEW SHOW AND HIDE
 function show(id) {
     document.getElementById(id).style.display = "grid";
+    this.preventDefault();
 }
 function hide(id) {
     document.getElementById(id).style.display = "none";
@@ -198,25 +199,48 @@ const bmiCalculatorScene2 = new ScrollMagic.Scene({
 const abouttl = new TimelineMax();
 const abouttl2 = new TimelineMax();
 //Effects
-abouttl.from(".about", 2, {
+abouttl.from(".skills", 2, {
     opacity: 0,
     y: -100
-});
-abouttl2.from(".about__emphasis", 2.5, {
+},'=-1');
+abouttl.from(".skill1", 2, {
     opacity: 0,
-   y: -100
-});
+    y: -100
+},'=-1.2');
+abouttl.from(".skill2", 2, {
+    opacity: 0,
+    y: -100
+},'=-1.3');
+abouttl.from(".skill3", 2, {
+    opacity: 0,
+    y: -100
+},'=-1.5');
+abouttl.from(".skill4", 2, {
+    opacity: 0,
+    y: -100
+},'=-1.6');
+abouttl.from(".skill5", 2, {
+    opacity: 0,
+    y: -100
+},'=-1.7');
+abouttl.from(".skill6", 2, {
+    opacity: 0,
+    y: -100
+},'=-1.8');
+abouttl.from(".skill-image", 2, {
+    opacity: 0,
+    x: -100
+},'=-4');
+
+
+
 //Trigger Scenes
 const aboutScene1 = new ScrollMagic.Scene({
     triggerElement: "#about-trigger"
 })
     .setTween(abouttl)
     .addTo(controller)
-    const aboutScene2 = new ScrollMagic.Scene({
-        triggerElement: "#about-trigger"
-    })
-    .setTween(abouttl2)
-    .addTo(controller)
+
 
 
 //HOW DO I WORK

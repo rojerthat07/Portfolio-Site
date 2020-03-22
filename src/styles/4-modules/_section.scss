@@ -98,7 +98,8 @@
 
        
         .column__text{
-            font-size: .9em;
+            font-size: .8em;
+            font-family: font("font7");
           
             @include laptop{
                 font-size: .7em;
@@ -110,7 +111,7 @@
         .column__paragraph {
             font-size: 1.9em;
             font-family: font("font1");
-            text-shadow: 1px 1px 5px gray;
+         
             @include desktop{
                 font-size: 1.3em;
             }
@@ -128,7 +129,7 @@
                 line-height: 2em;
             }
 
-            3
+            
             .column__heading {
                 font-family: font("font5");
                 font-size: .7em;
@@ -198,20 +199,20 @@
         padding:.5em 0;
         margin:0;
         @include desktop{
-            font-size: 2em;
+            font-size: 2.2em;
         }
         @include laptop{
-            font-size: 1.5em;
+            font-size: 1.4em;
         }
       }
       .column__information--details{
           line-height: 2em;
-          font-family: font("font2");
+          font-family: font("font7");
           @include desktop{
             font-size: .7em;
         }
         @include laptop{
-            font-size: .6em;
+            font-size: .7em;
         }
       }
     }

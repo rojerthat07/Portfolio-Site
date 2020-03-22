@@ -29,6 +29,10 @@
         @include tablet{
             margin: 30% auto 0 auto;
         }
+
+        @media (min-height:800px){
+            margin: 18% auto 0  10%;
+        }
         
 
         .introduction__header {
@@ -67,7 +71,7 @@
 
         .introduction__text {
             line-height: 2em;
-            font-family: font("font2");
+            font-family: font("font7");
             color: white;
             font-size: 1em;
             @include desktop{

@@ -101,11 +101,11 @@
         }
 
         .project__information {
-            font-size: .9em;
+            font-size: .8em;
             padding: .8em 1em 0 1em;
-            font-family: font("font2");
+            font-family: font("font7");
             @include laptop{
-                font-size: .7em;
+                font-size: .6em;
             }
         }
 
@@ -127,7 +127,7 @@
     text-align: center;
     width:90%;
     height:80vh;
-    z-index: 1;
+    z-index: 2;
     margin:3em auto;
     border-radius: 15px 0px 0px 15px ;
     position: sticky;   
@@ -198,15 +198,16 @@
             line-height: 2em;
             width:80%;
             margin: auto;
+            font-family: 'Roboto';
             @include desktop{
-                font-size: .8em;
+                font-size: .9em;
             }
             @include mini-laptop{
-                font-size: .7em;
+                font-size: .8em;
             }
            
             @include mobile{
-                font-size: .6em;
+                font-size: .7em;
             }
         
             
@@ -220,21 +221,23 @@
         }
         .project__information--heading{
             margin:1em 0;
+            font-family: font("font4");
             @include laptop{
                 font-size: 1.5em;
             }
         }
         .project__information--details{
             line-height: 2em;
+            font-family: 'Roboto';
             @include desktop{
                 font-size: .8em;
             }
             @include laptop{
-                font-size: .7em;
+                font-size: .6em;
             }
             @include tablet{
                 padding:0em 3em;
-                font-size: .6em;
+                font-size: .8em;
             }
         }
     }
