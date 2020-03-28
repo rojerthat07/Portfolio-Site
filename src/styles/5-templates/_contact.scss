@@ -130,7 +130,7 @@
             color: rgba(255, 166, 0, 0.9);
             font-size: 1em;
             padding: .7em;
-            background-color: $color5;
+            background-color: rgb(228, 225, 225);
             border-radius: 3em;
             @include desktop{
                 font-size: .7em;
@@ -139,7 +139,7 @@
 
             &:hover {
                 color: rgb(58, 58, 58);
-                background-color: $color2;
+                background-color: rgb(255, 255, 255);
                 border: $color1;
             }
         }

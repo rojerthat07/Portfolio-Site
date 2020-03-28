@@ -7,6 +7,10 @@
     padding:4em 3em;
     border: 5px double gold;
     margin: 5% auto;
+    @include tablet{
+        width: 70%;
+        padding:4em 1em;
+    }
     
     @include mobile{
         width: 90%;
@@ -15,6 +19,9 @@
 
     .skills__skills{
         font-size: 1.3em;
+        @include tablet{
+            font-size: 1em;
+        }
     }
 
     .two-column{
@@ -58,7 +65,7 @@
             font-size: 2.5em;
         }
         @include tablet{
-            font-size: 2em;
+            font-size: 1.5em;
         }
         
     }
