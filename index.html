@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jer Carlo Catallo - Front End Web Developer</title>
+  <link rel="icon" href="images/site logo.png">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!--ScrollMagic and Gsap Javascripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+    integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!--Main Style Sheet-->
+  <link rel="stylesheet" href="styles/main.min.css">
+</head>
+
+<body>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="introduction-information-trigger">
+    <a href="index.html" class="navbar-brand"> <span>Jer Carlo
+        Catallo</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="home-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="./pages/about.html" class="nav-link" id="about-link">About</a>
+        </li>
+   
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="projects-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="contact-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="https://drive.google.com/file/d/1gRD-j1Gxkg_fm80I1ybqieOmfatHbMyJ/view?usp=sharing"
+            class="nav-link">Resume</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Navigation End tag-->
+  </nav>
+
+  <!--contact Error Message-->
+  <div class="contact-error" id="contact-error">
+    <div class="contact-error__message">At the moment this form is not available.</div>
+    <div class="contact-error__message">Please email me at <span class="contact-error__email">
+        jercarlocatallo@gmail.com</span></div>
+    <button class="contact-error__exit-button" onclick="hide('contact-error')">X</button>
+  </div>
+  <!--Project Overview List-->
+  <!--Project 1 Overview-->
+  <div class="project__overview" id="dhvsuProject">
+    <button class="project__overview--exit" onclick="hide('dhvsuProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-dhvsu">
+      <img src="images/project-logo/dhvsu-logo.png" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">UNIVERSITY ONLINE ADMISSION</h1>
+      <p class="project__overview--details">A Online University Admission that aims to lessen the inconvenience of the
+        applicants and the staff of the university when the admission to college and senior high school approaches. This
+        will result for faster and better services of the university.</p>
+    </div>
+    <hr id="project-overview-dhvsu-trigger">
+
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+          <p class="project__information--details" id="project-overview-dhvsu-image-trigger"> The goal of the site is to
+            lessen the inconvenience of the applicants and the staff of the university when the admission to college and
+            senior high school approaches. Some of the applicants are far
+            away from the school and they need to spend some money to go just for admission. Furthermore, often there
+            are
+            huge number of applicants and the waiting time is very long and it is inconvenient in both of the staffs and
+            applicants. This site will be a great deal of help to the university, it will result for faster and for
+            better
+            services. So far, I have good learning experience in my university.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading"> ABOUT</h1>
+          <p class="project__information--details"> This project is part of the portfolio of Jer Carlo D. Catallo. The
+            University used in this site is based on the school on Bacolor, Pampanga the Don Honorio Ventura State
+            University and this is where I am currently studying Computer Science. When I was brainstorming on what
+            project I was to make to improve my skills, my university comes into my mind, When a I was in the university
+            for the admission the waiting time is very considerably long because of the huge number of applicants. I
+            think a Online Admission will be a great deal of help in a University, many of the schools are using this.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="three__column" id="project-overview-dhvsu-images">
+      <img src="images/doa images/2.png" alt="">
+      <img src="images/doa images/4.png" alt="">
+      <img src="images/doa images/3.png" alt="">
+    </div>
+  </div>
+  <!--Project 2 Overview-->
+  <div class="project__overview" id="universeProject">
+    <button class="project__overview--exit" onclick="hide('universeProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-universe">
+      <img src="images/project-logo/universe-site-logo.png" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">UNIVERSE PLANETARIUM</h1>
+      <p class="project__overview--details"> A Educational Website that gives informations about our Universe and the
+        other astronomy stuff like Galaxies, Stars, Planets, etcetera. The goal of the site is to give insight on how
+        enourmous our universe is and how we are extremely lucky to live. </p>
+    </div>
+    <hr id="project-overview-universe-trigger">
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+          <p class="project__information--details" id="project-overview-universe-image-trigger"> The goal of this site
+            is to give information about our universe. It includes living things, planets, stars, galaxies, dust clouds,
+            light, and even time. Before the birth of the Universe, time, space and matter did not exist..This site also
+            aims to open the eyes of the people, on how they are extremely lucky to live, universe is so massive we are
+            the only known living being in this universe, Fortunate? Do not waste the gift of our god to us live with a
+            purpose and find the meaning of your life.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">ABOUT</h1>
+          <p class="project__information--details"> This project is part of the Portfolio of Jer Carlo D. Catallo. A
+            Website that contains some of the information about our universe this includes big bang theory, galaxies,
+            etc. and some motivational message about life. Why I choose to make this project? When I was a child I am
+            amazed on the beauty of our Universe and I am dreamed of becoming a Astronomer. Alas, This thing is not for
+            me and I am destined for the other thing and now I am in the other path of my career and now I am going to
+            burn the bridges. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="three__column" id="project-overview-universe-images">
+      <img src="images/universe site images/2.png" alt="">
+      <img src="images/universe site images/3.png" alt="">
+      <img src="images/universe site images/4.png" alt="">
+    </div>
+  </div>
+  <!--Project 3 Overview-->
+  <div class="project__overview" id="gamingPcProject">
+    <button class="project__overview--exit" onclick="hide('gamingPcProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-gaming-pc">
+      <img src="images/project-logo/gaming-pc-logo.png" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">Corsair One i160</h1>
+      <p class="project__overview--details"> A E-commerce Landing Page that promotes a merchandise namely Corsair One
+        i160. The objective of the site is to gain audience and convince the customer to buy the product by displaying
+        important and wonderful characteristics of the product. </p>
+    </div>
+
+    <hr id="project-overview-gaming-pc-trigger">
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+          <p class="project__information--details" id="project-overview-gaming-pc-images-trigger"> The Purpose of this
+            site is to gain buyers of Corsair One i610 from all the around the world. This comes from showcasing all of
+            the advantages of buying the product and how extremely powerful and unique this gaming computer is. The
+            Corsair One i610 is a product of Corsair Components, Inc. it is an American computer peripherals and
+            hardware company headquartered in Fremont, California. All rights reserved to Corsair Components, Inc. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">ABOUT</h1>
+          <p class="project__information--details"> This project is part of the portfolio of Jer Carlo D. Catallo. The
+            purpose of this site is to promote the product of Corsair the Corsair One i160. I am fond of computers since
+            I was a child and I think it is good to make a site about I like and that is why this type of website comes
+            from my mind when I was brainstorming to what site to make to, add to my portfolio, this project greatly
+            improve my Front End Development and Designing Skills. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="three__column" id="project-overview-gaming-pc-images">
+      <img src="images/corsair site images/2.png" alt="">
+      <img src="images/corsair site images/3.png" alt="">
+      <img src="images/corsair site images/4.png" alt="">
+    </div>
+  </div>
+  <!--Project 4 Overview-->
+  <div class="project__overview" id="bmiCalculatorProject">
+    <button class="project__overview--exit" onclick="hide('bmiCalculatorProject')">X</button>
+    <div class="project__overview--introduction" id="project-overview-bmi-calculator">
+      <img src="images/logo.png" alt="" class="project__overview--logo">
+      <h1 class="project__overview--heading">Fitness Seeker</h1>
+      <p class="project__overview--details"> A E-commerce site namely Fitness Seeker that aims to have a online identity
+        in
+        the internet to attract more customers for their business. In addition, it intends to get in touch with the
+        customers online and to sell other products. In today's world fitness is a must. </p>
+    </div>
+    <hr id="project-overview-bmi-calculator-trigger">
+    <div class="two__column">
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading">GOAL OF THE SITE</h1>
+          <p class="project__information--details" id="project-overview-bmi-calculator-images-trigger"> The goal of the
+            site to build a online identity in the internet for a business in order
+            to attract more customers for their business. In addition, it intends to get in touch with the
+            customers online and to sell other products. This is a site for a Fitness Business that aims to improve the
+            health of the people by going into fitness related activies. If you want to accomplish something great, you
+            need to have an edge for discomfort. And isometrics of staying fit adds advantage to build this threshold
+            successfully.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project__information">
+          <h1 class="project__information--heading"> ABOUT</h1>
+          <p class="project__information--details"> This project is part of the portfolio of Jer Carlo D. Catallo. The
+            purpose of this site is to make a online identity for a business namely Fitness Seeker. I build this site to
+            step up my exprience in making a site that can help to gain more skills and be ready for a real job. I do
+            not put as much pages in the site because I think I get my main goal in building this, it is to make a good
+            promotion by making good design and putting all the adequate information on the site. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="three__column" id="project-overview-bmi-calculator-images">
+      <img src="images/fitness site images/1.png" alt="">
+      <img src="images/fitness site images/2.png" alt="">
+      <img src="images/fitness site images/3.png" alt="">
+    </div>
+  </div>
+
+  <!--Introduction-->
+  <div class="introduction" id="home-section">
+    <div class="introduction__information">
+    
+      <h1 class="introduction__header-2" id="introduction-information2">I'm a Front-End Web Developer based on the
+        Philippines</h1>
+      <p class="introduction__text" id="introduction-information3">Self-taught Front-end Developer with
+        background in Design.
+        I enjoy making beautiful and useful projects from planning to implementing and to coding and I thrive
+        mostly at the development of a Front-End Website and with the sidelines of UI/UX designing.
+      </p>
+      <button class="introduction__button" id="about-trigger">Learn More</button>
+    </div>
+
+    <!--Introduction End tag-->
+  </div>
+  <p id="about"></p>
+  <div class="main-content">
+
+
+    <!--Skills-->
+    <div class="skills">
+    
+
+      <div class="two-column">
+        <div class="column">
+          <h1 class="skills__heading">Deliverables</h1>
+          <h3 class="skills__skills skill1">Front-End Web Development</h3>
+          <h3 class="skills__skills skill2">WordPress Development</h3>
+          <h3 class="skills__skills skill3">WordPress Theme Development</h3>
+          <h3 class="skills__skills skill4">Landing Page Development</h3>
+          <h3 class="skills__skills skill5">Website Redesign Services</h3>
+          <h3 class="skills__skills skill6">PSD to HTML Services</h3>
+
+        </div>
+        <div class="column column2-1">
+          <img class="column__image skill-image" src="./images/services-gears.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+      <div class="three__column">
+        <div class="column">
+          <p class="column__paragraph">
+            <span class="column__heading">Languages:</span>
+            <br>HTML5 <img src="images/icons/html-logo.png" alt="">
+            <br>CSS3 <img src="images/icons/css-logo.png" alt="">
+            <br>SASS <img src="images/icons/sass-logo.png" alt="">
+            <br>JavaScript <img src="images/icons/javascript.svg" alt="">
+            <br>PHP <img src="images/icons/php-logo.png" alt="">
+               
+
+
+        </div>
+        <div class="column">
+          <p class="column__paragraph">
+            <span class="column__heading">Skills/Techonologies:</span>
+            <br>ReactJS <img src="images/icons/React.js_logo-512.png" alt="">
+            <br>Wordpress <img src="images/icons/wordpress-logo.png" alt="">
+            <br>Bootstrap <img src="images/icons/bootstrap-logo.png" alt="">
+            <br>Github <img src="images/icons/github-logo.png" alt="">
+            <br>Adobe PS <img src="images/icons/photoshop-logo.jpg" alt="">
+
+          </p>
+        </div>
+        <div class="column">
+          <img class="column__image" src="images/jer.jpg" alt="">
+
+        </div>
+      </div>
+
+      <!-- Skills End tag-->
+    </div>
+  
+    <!--Development Process-->
+    <h1 class="sections__heading">How Do I Work?</h1>
+    <div class="three__column">
+      <div class="column column--border">
+        <i class="fas fa-book"></i>
+        <h1>Planning Stage</h1>
+
+        <p class="column__text">In building a website, Planning comes first. I write down all the notes and the the
+          important things that I will do in a site, or what the clients wants him to do with his site. In addtion, I
+          ask myself some serveral questions: What attack will do in this type of site? What are the designs elements I
+          will use(fonts, color combinations, etc.)? Who are the audience? How can the site serves its purpose?</p>
+      </div>
+      <div class="column column--border">
+        <i class="fas fa-cog"></i>
+        <h1>Implementing Period</h1>
+
+        <p class="column__text">After Planning, I must find a way how to implement my plans for the site. I will
+          structure and organize my Development Workspace especially my files for faster and cleaner coding, Design the
+          site based on the plan with some help of prototyping tools, and this time, I will know what to add more in the
+          site and add it to the plan and I will able to know the estimated time of completion of the website.</p>
+      </div>
+      <div class="column column--border">
+        <i class="fas fa-code"></i>
+        <h1>Coding Phase</h1>
+
+        <p class="column__text">And now that all has been planned and implemented, the coding phase comes into place.
+          First, In the coding phase, I will start to code the desktop version of the website design and only after that
+          I will now start to make the site responsive in diffrent devices. When I have any problem, I use some
+          resources to get some help like Google, Youtube, Stack Overflow and so on, and learned from it.
+
+        </p>
+      </div>
+    </div>
+    <!--Design Process and Development Process-->
+    <hr class="hr--styled" id="design-process-trigger">
+    <div class="two__column">
+      <div class="column__information" id="design-process">
+        <h1 class="column__information--heading">Design process</h1>
+        <p class="column__information--details">In my design process, I always starts with the basic details of the
+          site. I will begin to search for the right font design for the site, then I must hit on the right color
+          combination of the site, I spend some time doing trial and error doing these two things.
+          Furthermore, I will start glancing and getting some inspiration in some websites across the internet and I
+          will choose the best and the most suitable web design in the site and I will add a some improvement in the
+          design. I am using Figma for Prototyping the Website for efficient Designing and I use the Adobe Photoshop for
+          Image Manipulation and Editing. Nowadays, there are tons of tools to aid the Developers in Designing and
+          Development that speed up the development and make better outputs.</p>
+      </div>
+      <div class="column__images">
+        <img class="column__images--image" src="images/contact-images.jpg" alt="">
+
+
+
+      </div>
+    </div>
+    <hr class="hr--styled" id="development-process-trigger">
+    <div class="two__column">
+      <div class="column__images">
+        <img class="column__images--image" src="images/contact-images3.jpg" alt="">
+
+      </div>
+      <div class="column__information" id="development-process">
+        <h1 class="column__information--heading">Development process</h1>
+        <p class="column__information--details">In the Development Process, I will start making my plans into a output
+          and I use my time efficiently, I divide my works as possible in smallest details and I focused my self to
+          accomplished my goals in the site step by step and rest is the very important part of the development.
+
+          I am using Visual Studio Code in coding, because its very convenient as it is a very powerful text editor that
+          I get easily comfortable with and I also use Github to save my projects to repositories and have a track on my
+          code and when I moved a place I can easily continue my work. I will say that Git and Github is a Safe Haven
+          for the developers. When problem comes visualizing comes into play, I write the problem and distinguished it
+          into smallest details as much as possible to know the characteristics of the problem and to solve it
+          effectively.
+        </p>
+
+      </div>
+      <p id="projects"></p>
+
+    </div>
+
+    <!--Development Process End-->
+    <hr class="hr--styled">
+    <!--Projects Section-->
+    <h1 class="sections__heading" id="projects-trigger">My Latest Works</h1>
+
+    <div class="projects-container">
+      <!--Project 1-->
+      <div class="project">
+        <h1 class="project__heading">University Online Admission</h1>
+        <div class="project__project">
+          <img class="project__project--image" src="images/doa images/1.png" alt="">
+          <div class="project__project--view">
+            <a href="https://github.com/rojerthat07/DOA-Portfolio" target="_blank"> <i class="fas fa-code"></i></a>
+            <a href="https://rojerthat07.github.io/DOA-Portfolio/" target="_blank"> <i class="fas fa-eye"></i></a>
+            <i class="fas fa-info-circle" onclick="show('dhvsuProject')"></i>
+          </div>
+        </div>
+
+        <p class="project__information"> A Online University Admission that aims to lessen the inconvenience of the
+          applicants and the staff of the university when the admission to college and senior high school approaches.
+          This will result for faster and better services of the university.</p>
+        <p class="project__technologies">Using: HTML5, CSS3/Sass, JavaScript, Bootstrap</p>
+      </div>
+        <!--Project 2-->
+  <div class="project">
+    <h1 class="project__heading">Novel Coronavirus Updates</h1>
+    <div class="project__project">
+      <img class="project__project--image" src="images/covid19.PNG" alt="">
+      <div class="project__project--view">
+        <a href="https://github.com/rojerthat07/corona-virus-status-react" target="_blank"> <i class="fas fa-code"></i></a>
+        <a href="https://rojerthat07.github.io/corona-virus-status-react/" target="_blank"> <i class="fas fa-eye"></i></a>
+       
+      </div>
+    </div>
+
+    <p class="project__information"> A Site that aims to view the confirmed cases, recovered, active and deaths of Covid19 all over the world. Fetching the data using the NovelCovid API where the data is comes from the website https://www.worldometers.info/coronavirus/. This will keep the people updated from status of Novel Coronavirus. </p>
+    <p class="project__technologies">Using: React JS, jQuery, Bootstrap and CSS3/Sass</p>
+  </div>
+  <!--Project 3-->
+  <div class="project">
+    <h1 class="project__heading">Movie Site Search Engine</h1>
+    <div class="project__project">
+      <img class="project__project--image" src="images/Movie Theater.PNG" alt="">
+      <div class="project__project--view">
+        <a href="https://github.com/rojerthat07/Movie-Database-Site-with-React-JS" target="_blank"> <i class="fas fa-code"></i></a>
+        <a href="https://rojerthat07.github.io/Movie-Database-Site-with-React-JS" target="_blank"> <i class="fas fa-eye"></i></a>
+       
+      </div>
+    </div>
+
+    <p class="project__information"> A Movie Site Search Engine that aims to view ratings, reviews, and where to watch the best movies with the support of the The Movie Database (TMDb) API. The Movie Database (TMDb) is a popular, user editable database for movies and TV shows.</p>
+    <p class="project__technologies">Using: React JS, jQuery and CSS3/Sass</p>
+  </div>
+      <!--Project 4-->
+      <div class="project">
+        <h1 class="project__heading">E-commerce Website</h1>
+        <div class="project__project">
+          <img class="project__project--image" src="images/fitness site.png" alt="">
+          <div class="project__project--view">
+            <a href="https://github.com/rojerthat07/Fitness-Site" target="_blank"> <i class="fas fa-code"></i></a>
+            <a href="https://rojerthat07.github.io/Fitness-Site/" target="_blank"> <i class="fas fa-eye"></i></a>
+            <i class="fas fa-info-circle" onclick="show('bmiCalculatorProject')"></i>
+          </div>
+        </div>
+        <p class="project__information"> A E-commerce site namely Fitness Seeker that aims to have a online identity in
+          the internet to attract more customers for their business. In addition, it intends to get in touch with the
+          customers online and to sell other products.</p>
+        <p class="project__technologies">Using: HTML5, CSS3/Sass, JavaScript and Bootstrap</p>
+      </div>
+      <!--Project 5-->
+      <div class="project">
+        <h1 class="project__heading">E-commerce Landing Page</h1>
+        <div class="project__project">
+          <img class="project__project--image" src="images/corsair site images/1.png" alt="">
+          <div class="project__project--view">
+            <a href="https://github.com/rojerthat07/Corsair-Site" target="_blank"> <i class="fas fa-code"></i></a>
+            <a href="https://rojerthat07.github.io/Corsair-Site/" target="_blank"> <i class="fas fa-eye"></i></a>
+            <i class="fas fa-info-circle" onclick="show('gamingPcProject')"></i>
+          </div>
+        </div>
+        <p class="project__information"> A E-commerce Landing Page that promotes a merchandise namely Corsair One i160.
+          The objective of the site is to gain audience and convince the customer to buy the product by displaying
+          important and wonderful characteristics of the item. </p>
+        <p class="project__technologies">Using: HTML5, CSS3/Sass, JavaScript and Bootstrap</p>
+      </div>
+      <!--Project 6-->
+      <div class="project">
+        <h1 class="project__heading">Educational Website</h1>
+        <div class="project__project">
+          <img class="project__project--image" src="images/universe site images/1.png" alt="">
+          <div class="project__project--view">
+            <a href="https://github.com/rojerthat07/Universe-Site" target="_blank"> <i class="fas fa-code"></i></a>
+            <a href="https://rojerthat07.github.io/Universe-Site/" target="_blank"> <i class="fas fa-eye"></i></a>
+            <i class="fas fa-info-circle" onclick="show('universeProject')"></i>
+          </div>
+        </div>
+        <p class="project__information"> A Educational Website that gives informations about our Universe and the other
+          astronomy stuff like Galaxies, Stars, Planets, etcetera. The goal of the site is to give insight on how
+          enourmous our universe is and how we are extremely lucky to live. </p>
+        <p class="project__technologies">Using: HTML5, CSS3/Sass, JavaScript and Bootstrap</p>
+      </div>
+     
+      <!--Projects Section End tag-->
+    </div>
+  </div>
+
+
+  <!--Contact Me-->
+  <div class="contact" id="contact">
+    <h1 class="sections__heading"
+      style="color:rgb(211, 248, 0);visibility: hidden;margin-left: -3px;font-family: 'Oswald Light'">s<span
+        style="visibility: visible;" class="contact-txt" data-wait="4000"
+        data-words='["GET IN TOUCH!", "TEAM UP WITH ME!","BE YOUR WEB DEVELOPER!"]'></a></h1>
+    <div class="two__column">
+      <form action="#contact" class="contact__form">
+        <div class="contact__input">
+          <i class="fas fa-user contact__input-icon"></i>
+          <input type="text" placeholder="Enter Name"  class="contact__input-input">
+        </div>
+   
+        <div class="contact__input">
+          <i class="fas fa-envelope contact__input-icon"></i>
+          
+          <input type="text" placeholder="Enter Email"  class="contact__input-input">
+        </div>
+        <label>Project's Detail: </label> <textarea cols="30" rows="10"></textarea>
+        <input type="submit" value="Send Email" onclick="show('contact-error')">
+      </form>
+      <div>
+
+        <p class="contact__details">I'm Currently available for work. If you have a project you'd like to discuss, then
+          please email me via the form or you can email at jercarlocatallo@gmail.com</p>
+
+        <p class="quotation">"Success seems to be connected with action. Successful people keep moving. They make
+          mistakes, but they
+          don't quit."
+          <span class="quotation__author">-Conrad Hilton</span></p>
+        <div class="contact__icons">
+          <a href="https://github.com/rojerthat07" target="_blank"><i class="fab fa-github-square" style="color:black;"></i></a>
+          <a href="https://www.linkedin.com/in/jer-carlo-catallo-52b7201a3/" target="_blank"><i class="fab fa-linkedin" style="color:#0077B5;"></i></a>
+          <a href="https://www.facebook.com/jercarlo.jc" target="_blank"> <i class="fab fa-facebook-square" style="color:#3B5998;"></i></a>
+        
+          <a href="https://www.youtube.com/channel/UCzfbhsmmPZuUlM3JgtqECQw/featured?view_as=subscriber" target="_blank"><i class="fab fa-youtube" style="color:red;"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <!--Contact Me End tag-->
+  </div>
+  <!--Footer-->
+  <div class="footer">
+    <p>© 2020 Jer Carlo Catallo | All rights reserved.</p>
+  </div>
+
+  <!--Main JavaScript File-->
+  <script src="scripts/app.js"></script>
+  <!--Jump.Js Effects-->
+  <script type="module">
+    import jump from './scripts/jump.js/dist/jump.module.js';
+
+    var learnButton = document.getElementById("about-trigger");
+    var contactLink = document.getElementById('contact-link');
+    var aboutLink = document.getElementById('about-link');
+    var projectsLink = document.getElementById('projects-link');
+    var homeLink = document.getElementById('home-link');
+    var workStyleLink = document.getElementById('work-style-link');
+
+
+
+
+
+    learnButton.addEventListener('click', () => {
+      jump('#about', {
+        offset: ((window.innerWidth <= 560) ? -50 : -40)
+      });
+    })
+    contactLink.addEventListener('click', () => {
+      jump('#contact', {
+        offset: ((window.innerWidth <= 560) ? -40 : -40)
+      });
+    })
+    aboutLink.addEventListener('click', () => {
+      jump('#about', {
+        offset: ((window.innerWidth <= 560) ? -50 : -40)
+      });
+    })
+
+    projectsLink.addEventListener('click', () => {
+      jump('#projects', {
+        offset: ((window.innerWidth <= 560) ? -30 : 20)
+      });
+    })
+    homeLink.addEventListener('click', () => {
+      jump('#home-section', {
+        offset: ((window.innerWidth <= 560) ? -60 : -60)
+      });
+    })
+ 
+  </script>
+</body>
+
+</html>
