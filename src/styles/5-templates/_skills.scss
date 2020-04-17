@@ -18,9 +18,10 @@
     }
 
     .skills__skills{
-        font-size: 1.3em;
+        font-size: 1em;
+        font-family: font("font7");
         @include tablet{
-            font-size: 1em;
+            font-size: .8em;
         }
     }
 
@@ -53,7 +54,7 @@
 
     .skills__heading {
         font-size: 3em;
-        font-family: font("font2");
+        font-family: font("font3");
         padding:.3em;
         border-bottom: 1px solid rgb(168, 168, 168);
         margin:0em 0em 1em 0em;
