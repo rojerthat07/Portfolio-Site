@@ -113,7 +113,8 @@
             margin: 1%;
             font-size: .7em;
             padding: 0 4em 0 4em;
-            font-family: font("font4");
+            font-weight: bold;
+            font-family: font("font3");
             @include laptop{
                 font-size: .5em;
             }
